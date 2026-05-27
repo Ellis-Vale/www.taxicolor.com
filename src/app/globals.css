@@ -1,31 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Outfit:wght@800;900&display=swap');
 @import "tailwindcss";
 
-:root {
+/* Theme definitions using standard root mappings */
+:root, :root[data-theme="dark"] {
   --background: #080C14;
   --foreground: #F8FAFC;
-  
-  --saffron: #FFC700;
-  --obsidian: #080C14;
-  --charcoal: #0F131C;
+  --accent: #FFC700;
+  --accent-glow: rgba(255, 199, 0, 0.15);
+  --accent-glow-strong: rgba(255, 199, 0, 0.35);
+  --panel: rgba(15, 19, 28, 0.55);
+  --border: rgba(255, 255, 255, 0.05);
   --steel: #64748B;
-  --polar: #F8FAFC;
+  --grid-color: rgba(255, 199, 0, 0.02);
+  --input-thumb-glow: rgba(255, 199, 0, 0.5);
+  --nav-bg: rgba(8, 12, 20, 0.85);
+  --cost-traditional-bg: rgba(255, 255, 255, 0.01);
+  --cost-taxicolor-bg: rgba(255, 255, 255, 0.02);
+  --button-hover-bg: #FFE37F;
+  --button-text: #080C14;
+}
+
+:root[data-theme="light"] {
+  --background: #FAFAFA;
+  --foreground: #0F172A;
+  --accent: #D97706; /* Rich Amber Gold */
+  --accent-glow: rgba(217, 119, 6, 0.08);
+  --accent-glow-strong: rgba(217, 119, 6, 0.2);
+  --panel: rgba(255, 255, 255, 0.75);
+  --border: rgba(15, 23, 42, 0.08);
+  --steel: #475569;
+  --grid-color: rgba(15, 23, 42, 0.02);
+  --input-thumb-glow: rgba(217, 119, 6, 0.3);
+  --nav-bg: rgba(250, 250, 250, 0.85);
+  --cost-traditional-bg: rgba(15, 23, 42, 0.02);
+  --cost-taxicolor-bg: rgba(15, 23, 42, 0.04);
+  --button-hover-bg: #B45309;
+  --button-text: #FFFFFF;
+}
+
+:root[data-theme="china-direct"] {
+  --background: #05080E;
+  --foreground: #F8FAFC;
+  --accent: #DE2910; /* China Crimson Red */
+  --accent-glow: rgba(222, 41, 16, 0.18);
+  --accent-glow-strong: rgba(222, 41, 16, 0.4);
+  --panel: rgba(20, 10, 10, 0.6);
+  --border: rgba(222, 41, 16, 0.12);
+  --steel: #8E9AA8;
+  --grid-color: rgba(222, 41, 16, 0.03);
+  --input-thumb-glow: rgba(222, 41, 16, 0.6);
+  --nav-bg: rgba(5, 8, 14, 0.85);
+  --cost-traditional-bg: rgba(255, 255, 255, 0.01);
+  --cost-taxicolor-bg: rgba(222, 41, 16, 0.05);
+  --button-hover-bg: #FF5A43;
+  --button-text: #FFFFFF;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-saffron: var(--saffron);
-  --color-obsidian: var(--obsidian);
-  --color-charcoal: var(--charcoal);
+  --color-accent: var(--accent);
+  --color-panel: var(--panel);
+  --color-border: var(--border);
   --color-steel: var(--steel);
-  --color-polar: var(--polar);
   
   --font-heading: 'Plus Jakarta Sans', sans-serif;
   --font-body: 'Inter', sans-serif;
-  
-  --shadow-glow-saffron: 0 0 15px rgba(255, 199, 0, 0.15);
-  --shadow-glow-saffron-strong: 0 0 25px rgba(255, 199, 0, 0.35);
 }
 
 body {
@@ -33,45 +73,58 @@ body {
   color: var(--foreground);
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Custom Premium Glassmorphism & Cyber Grid Utilities */
 .cyber-grid {
   background-image: 
-    linear-gradient(rgba(255, 199, 0, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 199, 0, 0.02) 1px, transparent 1px);
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
   background-size: 50px 50px;
   background-position: center;
 }
 
 .glass-card {
-  background: rgba(15, 19, 28, 0.55);
+  background: var(--panel);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--border);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .glass-card:hover {
-  border-color: rgba(255, 199, 0, 0.25);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 199, 0, 0.08);
+  border-color: rgba(222, 41, 16, 0.25); /* Fallback */
+  border-color: var(--accent);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7), 0 0 15px var(--accent-glow);
+}
+
+:root[data-theme="light"] .glass-card:hover {
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08), 0 0 15px var(--accent-glow);
 }
 
 .saffron-glow-hover {
   transition: all 0.3s ease;
 }
 .saffron-glow-hover:hover {
-  box-shadow: 0 0 20px rgba(255, 199, 0, 0.3);
+  box-shadow: 0 0 20px var(--accent-glow-strong);
   transform: translateY(-1px);
 }
 
 /* Styled range input for premium look */
 input[type="range"]::-webkit-slider-thumb {
-  background: #FFC700 !important;
-  box-shadow: 0 0 10px rgba(255, 199, 0, 0.5) !important;
+  background: var(--accent) !important;
+  box-shadow: 0 0 10px var(--input-thumb-glow) !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input[type="range"]::-moz-range-thumb {
-  background: #FFC700 !important;
-  box-shadow: 0 0 10px rgba(255, 199, 0, 0.5) !important;
+  background: var(--accent) !important;
+  box-shadow: 0 0 10px var(--input-thumb-glow) !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Helper transitions */
+header, footer, nav a, button, section, div, span, p, h1, h2, h3, h4 {
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }

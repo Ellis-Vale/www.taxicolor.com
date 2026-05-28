@@ -394,6 +394,33 @@ const TRANSLATIONS = {
   }
 };
 
+const tradeEngines = [
+  {
+    appUi: '/img/dalong_app_foreign_wechat_ui.png',
+    buyerScene: '/img/director_app_foreign_wechat_scene.png',
+  },
+  {
+    appUi: '/img/dalong_app_compliance_assistant_ui.png',
+    buyerScene: '/img/director_app_assistant_scene.png',
+  },
+  {
+    appUi: '/img/dalong_app_trade_manager_ui.png',
+    buyerScene: '/img/director_app_trade_manager_scene.png',
+  },
+  {
+    appUi: '/img/dalong_app_director_assistant_ui.png',
+    buyerScene: '/img/director_app_operation_scene.png',
+  },
+  {
+    appUi: '/img/dalong_app_market_insight_ui.png',
+    buyerScene: '/img/director_app_market_insight_scene.png',
+  },
+  {
+    appUi: '/img/dalong_app_product_listing_ui.png',
+    buyerScene: '/img/director_app_video_factory_scene.png',
+  },
+];
+
 export default function GlobalSourcingHome() {
   const [mounted, setMounted] = useState(false);
   const [activeEngineTab, setActiveEngineTab] = useState(0);
@@ -510,18 +537,33 @@ export default function GlobalSourcingHome() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3.5">
             {/* Minimalist SVG Emblem */}
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#1E293B] to-[#0F172A] border border-white/10 flex items-center justify-center shadow-lg shadow-black/40">
-              <svg viewBox="0 0 100 100" className="w-6.5 h-6.5">
-                <polygon points="50,42 30,22 12,28 28,42" fill="#FFE57F" />
-                <polygon points="50,42 70,22 88,28 72,42" fill="#FFE57F" />
-                <polygon points="50,42 50,75 35,53" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
-                <polygon points="50,42 50,75 65,53" fill={theme === 'china-direct' ? '#B31A05' : '#D99B00'} />
-                <polygon points="35,53 50,75 38,78 24,58" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} />
-                <polygon points="65,53 50,75 62,78 76,58" fill={theme === 'china-direct' ? '#991100' : '#B77900'} />
-                <polygon points="50,75 38,78 50,88" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
-                <polygon points="50,75 62,78 50,88" fill={theme === 'china-direct' ? '#B31A05' : '#B77900'} />
-              </svg>
-            </div>
+            <svg viewBox="0 0 100 100" className="w-9 h-9 drop-shadow-[0_0_8px_var(--accent-glow)] transform hover:scale-105 transition-transform duration-300">
+              <polygon points="50,3 90,26 90,74 50,97 10,74 10,26" fill="none" stroke={theme === 'china-direct' ? '#DE2910' : '#FFC700'} strokeWidth="2" strokeOpacity="0.4" />
+              
+              {/* Left Horn */}
+              <polygon points="50,42 30,22 12,28 28,42" fill="#FFE57F" />
+              <polygon points="30,22 12,28 32,32" fill="#E65100" opacity="0.4" />
+
+              {/* Right Horn */}
+              <polygon points="50,42 70,22 88,28 72,42" fill="#FFE57F" />
+              <polygon points="70,22 88,28 68,32" fill="#E65100" opacity="0.6" />
+
+              {/* Forehead & Nose */}
+              <polygon points="50,42 50,75 35,53" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
+              <polygon points="50,42 50,75 65,53" fill={theme === 'china-direct' ? '#B31A05' : '#D99B00'} />
+
+              {/* Cheeks */}
+              <polygon points="35,53 50,75 38,78 24,58" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} />
+              <polygon points="65,53 50,75 62,78 76,58" fill={theme === 'china-direct' ? '#991100' : '#B77900'} />
+
+              {/* Forehead Plates (Removes cherry stem gap) */}
+              <polygon points="50,42 35,53 24,58 30,22" fill="#FFE082" />
+              <polygon points="50,42 65,53 76,58 70,22" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} opacity="0.85" />
+              
+              {/* Muzzle/Nose Base */}
+              <polygon points="50,75 38,78 50,88" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
+              <polygon points="50,75 62,78 50,88" fill={theme === 'china-direct' ? '#B31A05' : '#B77900'} />
+            </svg>
             <div>
               {/* Zero-space brand identity wordmark */}
               <div className="flex items-center leading-none">
@@ -980,7 +1022,7 @@ export default function GlobalSourcingHome() {
               <div className="relative bg-panel border border-border rounded-3xl overflow-hidden shadow-2xl p-4 text-center space-y-4">
                 <div className="relative aspect-square w-full rounded-2xl overflow-hidden bg-black/40 border border-border shadow-inner">
                   <Image 
-                    src="/img/tunan_portrait.png" 
+                    src="/img/dalong_portrait.png" 
                     alt="Dalong Portrait" 
                     fill
                     className="object-cover opacity-85"
@@ -1177,18 +1219,34 @@ export default function GlobalSourcingHome() {
       <footer className="bg-background text-slate-500 py-12 px-6 border-t border-border">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-[#1E293B] to-[#0F172A] border border-white/10 flex items-center justify-center shadow-lg">
-              <svg viewBox="0 0 100 100" className="w-5 h-5">
-                <polygon points="50,42 30,22 12,28 28,42" fill="#FFE57F" />
-                <polygon points="50,42 70,22 88,28 72,42" fill="#FFE57F" />
-                <polygon points="50,42 50,75 35,53" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
-                <polygon points="50,42 50,75 65,53" fill={theme === 'china-direct' ? '#B31A05' : '#D99B00'} />
-                <polygon points="35,53 50,75 38,78 24,58" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} />
-                <polygon points="65,53 50,75 62,78 76,58" fill={theme === 'china-direct' ? '#991100' : '#B77900'} />
-                <polygon points="50,75 38,78 50,88" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
-                <polygon points="50,75 62,78 50,88" fill={theme === 'china-direct' ? '#B31A05' : '#B77900'} />
-              </svg>
-            </div>
+            {/* Minimalist SVG Emblem */}
+            <svg viewBox="0 0 100 100" className="w-8 h-8 drop-shadow-[0_0_8px_var(--accent-glow)] transform hover:scale-105 transition-transform duration-300">
+              <polygon points="50,3 90,26 90,74 50,97 10,74 10,26" fill="none" stroke={theme === 'china-direct' ? '#DE2910' : '#FFC700'} strokeWidth="2" strokeOpacity="0.4" />
+              
+              {/* Left Horn */}
+              <polygon points="50,42 30,22 12,28 28,42" fill="#FFE57F" />
+              <polygon points="30,22 12,28 32,32" fill="#E65100" opacity="0.4" />
+
+              {/* Right Horn */}
+              <polygon points="50,42 70,22 88,28 72,42" fill="#FFE57F" />
+              <polygon points="70,22 88,28 68,32" fill="#E65100" opacity="0.6" />
+
+              {/* Forehead & Nose */}
+              <polygon points="50,42 50,75 35,53" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
+              <polygon points="50,42 50,75 65,53" fill={theme === 'china-direct' ? '#B31A05' : '#D99B00'} />
+
+              {/* Cheeks */}
+              <polygon points="35,53 50,75 38,78 24,58" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} />
+              <polygon points="65,53 50,75 62,78 76,58" fill={theme === 'china-direct' ? '#991100' : '#B77900'} />
+
+              {/* Forehead Plates (Removes cherry stem gap) */}
+              <polygon points="50,42 35,53 24,58 30,22" fill="#FFE082" />
+              <polygon points="50,42 65,53 76,58 70,22" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} opacity="0.85" />
+              
+              {/* Muzzle/Nose Base */}
+              <polygon points="50,75 38,78 50,88" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
+              <polygon points="50,75 62,78 50,88" fill={theme === 'china-direct' ? '#B31A05' : '#B77900'} />
+            </svg>
             <div className="text-left">
               <span className="text-xs font-bold text-foreground tracking-widest block uppercase font-heading">taxicolor</span>
               <span className="text-[8px] font-bold text-accent block uppercase tracking-wider font-mono">{t.footerSlogan}</span>

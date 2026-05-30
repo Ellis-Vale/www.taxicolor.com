@@ -24,7 +24,8 @@ import {
   RefreshCw,
   Scale,
   Anchor,
-  AlertCircle
+  AlertCircle,
+  Send
 } from 'lucide-react';
 
 const TRANSLATIONS = {
@@ -43,7 +44,7 @@ const TRANSLATIONS = {
     heroBadge: "Budorcas taxicolor • Direct-to-Source",
     heroSlogan: "High-Altitude Sourcing Precision.",
     heroHighlight: "Direct Sourcing Saffron.",
-    heroDesc: "We automate supplier discovery, run laboratory tolerance prediction models, audit industrial specifications, and orchestrate customs logistics directly from Waigaoqiao FTZ — all for a flat, transparent subscription. Zero middleman markup.",
+    heroDesc: "I write custom code to crawl supplier registrations, run predictive QA models, personally audit industrial specifications in regional workshops, and streamline customs logistics directly through Waigaoqiao FTZ — all for a flat retainer. No hidden markups.",
     btnExplore: "Explore Sourcing Engines",
     btnCatalogHero: "Automotive OEM Catalog",
     statMapped: "Auto SKU Mapped",
@@ -85,7 +86,7 @@ const TRANSLATIONS = {
     // Transparency
     transBadge: "DEEP TRANSPARENCY",
     transTitle: "100% Price Penetration. Pure Sourcing.",
-    transDesc: "Traditional trade agents claim '0% commission' yet collect opaque factory kickbacks, inflating direct unit costs by 5% to 15%. Taxicolor aligns strictly with your profitability.",
+    transDesc: "Traditional trade agents claim '0% commission' yet collect opaque factory kickbacks, inflating direct unit costs by 5% to 15%. I run Taxicolor on a transparent monthly flat fee because B2B sourcing should be aligned with your profit — not hidden markups.",
     
     opaqueBadge: "Traditional Import Agent",
     opaqueModel: "OPAQUE COMMISSION",
@@ -95,10 +96,10 @@ const TRANSLATIONS = {
     opaqueBullet2: "Opaque Quality Auditing: Standard sourcing sales agents lack engineering assets to audit physical tolerances.",
     opaqueBullet3: "Supplier Lock-in: They hide factory identities, denying you real-time supply chain sovereignty.",
     
-    transparentBadge: "Taxicolor Flat-Fee Engine",
+    transparentBadge: "Tunan's Flat-Fee Sourcing Partner",
     transparentModel: "100% TRANSPARENT",
     transparentTitle: "Direct Factory Billing & Complete Tech Sovereignty",
-    transparentText: "We act as your local engineering arm and software interface in China. Factory billings go directly to you with 0% markup. You pay a transparent, highly predictable monthly subscription or project fee.",
+    transparentText: "I act as your direct local engineering representative and software interface in China. Factory invoices go directly to your desk with 0% markup. You only pay a transparent, predictable monthly flat retainer for my boots-on-the-ground time and self-developed code.",
     transparentBullet1: "100% Price Penetration: Original ex-works invoices. You pay precisely what the manufacturer charges.",
     transparentBullet2: "Hands-On Workshop QA: Run by former big-tech software and process architects, auditing assembly line PLC controls.",
     transparentBullet3: "Self-Custodial Databases: Direct ownership of all supplier coordinates, technical specifications, and shipping documentation.",
@@ -106,7 +107,7 @@ const TRANSLATIONS = {
     // Engines Showcase
     engineBadge: "TAXICOLOR TRADE ENGINES",
     engineTitle: "Real-World Operations. Encapsulated in Software.",
-    engineDesc: "Click through our custom digital trade modules. Observe how each software interface is backed by rigorous, physical operations on the manufacturing workshop floors.",
+    engineDesc: "I build my own trade code tools. Click through the interfaces I designed to replace slow middleman paperwork with automated Python and Next.js scripts, directly synchronized with physical workshop checks.",
     engineSpec: "Engine Specifications",
     engineBilling: "Transparent Billing",
     engineSelfService: "Self-Service Module",
@@ -175,12 +176,12 @@ const TRANSLATIONS = {
     opsBadge: "YOUR ON-SITE AUDIT LEADER",
     opsTitle: "An Elite Software Mind in the Molding Workshops.",
     opsPara1: "Standard import intermediaries act purely as brokers, focused entirely on markup percentages while remaining blind to technical specifications. We approach global sourcing differently.",
-    opsPara2: "Dalong, a veteran big-tech system architect, personally audits parts manufacturers. We analyze mold structures, inspect raw steel grades, and calibrate robotic assembly lines to guarantee every component batch adheres rigorously to digital blueprint standards.",
+    opsPara2: "Tunan, a veteran big-tech system architect, personally audits parts manufacturers. We analyze mold structures, inspect raw steel grades, and calibrate robotic assembly lines to guarantee every component batch adheres rigorously to digital blueprint standards.",
     opsTitle1: "Bilingual Engineering Dialogs",
     opsDesc1: "Seamless, fluent technical negotiation directly with foreign managers. Zero translations friction.",
     opsTitle2: "Waigaoqiao FTZ Consolidation",
     opsDesc2: "Consolidate multiple component batches at Waigaoqiao Free Trade Zone to optimize shipping density and duties.",
-    opsPortraitName: "DALONG",
+    opsPortraitName: "Tunan",
     opsPortraitTag: "ON-SITE PARTNER",
     opsPortraitDesc: "Former Big-Tech Full-Stack Architect",
     
@@ -194,8 +195,8 @@ const TRANSLATIONS = {
     calcAnnualToggle: "Annual Billing (-20% Off)",
     calcTradAgent: "Traditional Sourcing Agent",
     calcTradDesc: "Based on standard 5% commission markup calculated against average shipment volume values.",
-    calcFlatFee: "Taxicolor Flat-Fee Tech Model",
-    calcFlatDesc: "Calculated via flat-rate dashboard subscription + direct ex-works factory data loading.",
+    calcFlatFee: "Tunan's Flat-Fee Sourcing Partner",
+    calcFlatDesc: "Zero markup. Direct access to raw factory ex-works invoice + flat service retainer.",
     calcYearEst: "/ Year Est.",
     calcRetained: "Budget Safely Retained",
     calcRetainedDesc: "Bypassing trading markups directly strengthens your pricing competitiveness in foreign markets.",
@@ -225,7 +226,7 @@ const TRANSLATIONS = {
     heroBadge: "Budorcas taxicolor • 直连工厂",
     heroSlogan: "高海拔采购精准度，",
     heroHighlight: "重塑供应链毛利结构。",
-    heroDesc: "我们自动进行工厂探索，运行实验室质量预测模型，审计工业规格，并在上海外高桥保税区直接调配集装箱物流——一切仅需一份平价、透明的订阅服务。彻底斩断中间商加价。",
+    heroDesc: "我用自研代码算法筛选一级工厂，亲自睡进车间现场审计机械公差，并在上海外高桥自贸区调配货柜清关。一切仅收透明、固定的服务费，彻底剥离中间商的灰色返点加价。",
     btnExplore: "探索采购引擎",
     btnCatalogHero: "汽车零件规格库",
     statMapped: "已映射零件规格",
@@ -267,7 +268,7 @@ const TRANSLATIONS = {
     // Transparency
     transBadge: "极致透明",
     transTitle: "100% 穿透原厂底价，纯粹代采购。",
-    transDesc: "传统外贸中介宣称“0% 佣金”，却在暗中收取工厂回扣，将设备或产品出厂价抬高 5% 至 15%。Taxicolor 坚定捍卫你的最终毛利。",
+    transDesc: "传统贸易中介宣称“0% 佣金”，却在暗中收受厂家回扣，使得实际采购成本虚高 5% 到 15%。图南带领 Taxicolor 实行“纯平价订阅服务费”，将最真实的出厂底价账单直接穿透呈现给您。",
     
     opaqueBadge: "传统进出口代理中介模式",
     opaqueModel: "灰色加价模式",
@@ -277,10 +278,10 @@ const TRANSLATIONS = {
     opaqueBullet2: "空洞的质量把控：仅为业务员对接，缺乏工科背景和工具去现场量化工艺公差。",
     opaqueBullet3: "供应商绑定：严密防范你获得工厂联系方式，剥夺你的供应链自主权。",
     
-    transparentBadge: "Taxicolor 透明采购订阅",
+    transparentBadge: "图南平价技术合伙人服务",
     transparentModel: "100% 穿透真实",
     transparentTitle: "直付工厂 & 拥有完整的供应链主权",
-    transparentText: "我们是你在中国本土的工程师眼睛和系统软件界面。所有采购款项直接向工厂支付，0% 加价。你只需付出一份透明、可预测的月度订阅费或定制包干费。",
+    transparentText: "我是您在中国本土的工程师眼睛与自研系统界面。所有货款100%直接向工厂底价支付，0%加价。您只需支付一份固定可预测的月度服务费，买断我的车间现场时间与全套自研流程脚本。",
     transparentBullet1: "100% 底价穿透：直面出厂原始底价，你付的每一分钱都付给价值本身。",
     transparentBullet2: "实地技术质检：由前大厂资深全栈系统设计架构师带队，到车间现场对 PLC 流水线参数进行调试。",
     transparentBullet3: "自主掌握数据库：所有的源头工厂联系人、工程图纸、海运发票均保存在你自己的云端，永不流失。",
@@ -288,7 +289,7 @@ const TRANSLATIONS = {
     // Engines Showcase
     engineBadge: "TAXICOLOR 数字化交易引擎",
     engineTitle: "用软件封装的工厂地面作业力。",
-    engineDesc: "点击下方的数字贸易模块。观察我们是如何用先进的代码，将远在中国的制造流水线实地工作流程，完美呈现在你的电脑端仪表盘中的。",
+    engineDesc: "我不玩“发邮件加表格”的手工低效外贸。点击下方由我亲自编写的代码模块，看我们如何用自动化的 Python、Next.js 脚本，直接连通制造车间的实地公差数据。",
     engineSpec: "引擎技术规格",
     engineBilling: "透明订阅计费",
     engineSelfService: "自助应用模块",
@@ -357,12 +358,12 @@ const TRANSLATIONS = {
     opsBadge: "你在中国的地面技术队长",
     opsTitle: "写过大厂架构的代码，也爬得下压铸车间的模具。",
     opsPara1: "绝大部分中介代理都是单纯的业务员，只会计算加价比例，对机械工程和材质规格一窍不通。我们提供真正的技术落地力。",
-    opsPara2: "Dalong，曾任一线科技大厂的核心系统设计专家，亲自带领车间审核团队。我们现场审核模具抗压强度，检验原材料防锈等级，调试全自动螺纹 PLC 设备，用理性的工科规范把控每件产品，确保最终出货和数模图纸分毫不差。",
+    opsPara2: "图南，曾任一线科技大厂的核心系统设计专家，亲自带领车间审核团队。我们现场审核模具抗压强度，检验原材料防锈等级，调试全自动螺纹 PLC 设备，用理性的工科规范把控每件产品，确保最终出货和数模图纸分毫不差。",
     opsTitle1: "双语技术直连对话",
     opsDesc1: "直接由具备开发和外贸背景的中高管和客户无缝对接技术图纸，拒绝沟通损耗。",
     opsTitle2: "外高桥保税区拼箱装柜",
     opsDesc2: "在浦东自贸区海运拼箱监管仓，帮助你的多个工厂批次实现合并装箱报关，大幅降低货代空运及散货堆存费。",
-    opsPortraitName: "DALONG",
+    opsPortraitName: "图南",
     opsPortraitTag: "中国区技术合伙人",
     opsPortraitDesc: "前大厂全栈系统设计架构师",
     
@@ -376,8 +377,8 @@ const TRANSLATIONS = {
     calcAnnualToggle: "年度付款 (-20% 优惠)",
     calcTradAgent: "传统代理中介模式",
     calcTradDesc: "基于 5% 行业平均货值返点/隐性加价计算得出的年度预估加价成本。",
-    calcFlatFee: "Taxicolor 穿透式代采模式",
-    calcFlatDesc: "基于月度平价系统订阅 + 原始工厂出厂发票数据维护计算得出的全部服务成本。",
+    calcFlatFee: "图南平价技术合伙人服务",
+    calcFlatDesc: "零点数加价。100%直接付给工厂原始底价账单 + 纯粹固定月度服务费。",
     calcYearEst: "/ 年 预估服务费",
     calcRetained: "采购预算净留存",
     calcRetainedDesc: "完全过滤掉贸易商的加价成本，你的出海产品在海外市场将拥有无懈可击的价格竞争力。",
@@ -396,27 +397,27 @@ const TRANSLATIONS = {
 
 const tradeEngines = [
   {
-    appUi: '/img/dalong_app_foreign_wechat_ui.png',
+    appUi: '/img/tunan_app_foreign_wechat_ui.png',
     buyerScene: '/img/director_app_foreign_wechat_scene.png',
   },
   {
-    appUi: '/img/dalong_app_compliance_assistant_ui.png',
+    appUi: '/img/tunan_app_compliance_assistant_ui.png',
     buyerScene: '/img/director_app_assistant_scene.png',
   },
   {
-    appUi: '/img/dalong_app_trade_manager_ui.png',
+    appUi: '/img/tunan_app_trade_manager_ui.png',
     buyerScene: '/img/director_app_trade_manager_scene.png',
   },
   {
-    appUi: '/img/dalong_app_director_assistant_ui.png',
+    appUi: '/img/tunan_app_director_assistant_ui.png',
     buyerScene: '/img/director_app_operation_scene.png',
   },
   {
-    appUi: '/img/dalong_app_market_insight_ui.png',
+    appUi: '/img/tunan_app_market_insight_ui.png',
     buyerScene: '/img/director_app_market_insight_scene.png',
   },
   {
-    appUi: '/img/dalong_app_product_listing_ui.png',
+    appUi: '/img/tunan_app_product_listing_ui.png',
     buyerScene: '/img/director_app_video_factory_scene.png',
   },
 ];
@@ -1022,8 +1023,8 @@ export default function GlobalSourcingHome() {
               <div className="relative bg-panel border border-border rounded-3xl overflow-hidden shadow-2xl p-4 text-center space-y-4">
                 <div className="relative aspect-square w-full rounded-2xl overflow-hidden bg-black/40 border border-border shadow-inner">
                   <Image 
-                    src="/img/dalong_portrait.png" 
-                    alt="Dalong Portrait" 
+                    src="/img/tunan_portrait.png" 
+                    alt="Tunan Portrait" 
                     fill
                     className="object-cover opacity-85"
                     onError={(e) => {
@@ -1081,6 +1082,169 @@ export default function GlobalSourcingHome() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* 7.5. FOUNDER'S MANIFESTO */}
+      <section id="manifesto" className="py-24 bg-background relative overflow-hidden border-t border-border">
+        {/* Ambient Grid Background */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-35 dark:opacity-20 pointer-events-none" />
+        
+        <div className="max-w-4xl mx-auto px-6 relative z-10">
+          {/* Section Header */}
+          <div className="text-center space-y-3 mb-16">
+            <span className="px-3 py-1 text-[9px] font-extrabold tracking-widest text-accent bg-accent/10 rounded-full uppercase border border-accent/20 inline-block font-mono">
+              {lang === 'en' ? "RAW & HONEST INTENT" : "坦诚宣言"}
+            </span>
+            <h2 className="font-heading text-3xl sm:text-4xl font-black text-foreground tracking-tight">
+              {lang === 'en' ? "The Founder's Manifesto" : "创始人特立独行的白皮书"}
+            </h2>
+            <p className="text-xs text-slate-400 font-body max-w-lg mx-auto">
+              {lang === 'en' 
+                ? "No glossy corporate brochures. Just engineering discipline and 100% price transparency."
+                : "没有精美的公关宣传册，只有严苛的工程纪律和 100% 的出厂底价穿透。"}
+            </p>
+          </div>
+
+          {/* High-Fidelity Glassmorphic Terminal Card */}
+          <div className="glass-card rounded-3xl border border-border shadow-2xl overflow-hidden backdrop-blur-xl bg-panel/40">
+            {/* Terminal Top Bar */}
+            <div className="bg-[#090D16] border-b border-border px-5 py-3.5 flex items-center justify-between">
+              <div className="flex items-center gap-1.5">
+                <span className="w-3 h-3 rounded-full bg-rose-500/80 inline-block" />
+                <span className="w-3 h-3 rounded-full bg-amber-500/80 inline-block" />
+                <span className="w-3 h-3 rounded-full bg-emerald-500/80 inline-block" />
+                <span className="text-[10px] text-slate-400 font-mono ml-3 font-semibold tracking-wider select-none">
+                  tunan@taxicolor:~ $ cat manifesto.md
+                </span>
+              </div>
+              <span className="text-[9px] text-accent font-mono font-bold tracking-wider animate-pulse uppercase">
+                {lang === 'en' ? "LIVE CONSOLE" : "实时终端"}
+              </span>
+            </div>
+
+            {/* Terminal Body */}
+            <div className="p-8 sm:p-10 space-y-8 font-body text-slate-350 relative text-left leading-relaxed text-sm sm:text-base selection:bg-accent selection:text-button-text">
+              {lang === 'en' ? (
+                <>
+                  <p className="font-semibold text-foreground text-base sm:text-lg">
+                    I spent years as a full-stack engineer at big tech companies. Now I'm building something different: a sourcing partner that connects global buyers directly with Chinese factories, without the layers of middlemen.
+                  </p>
+                  
+                  <p className="border-l-2 border-accent/40 pl-4 py-1 text-slate-400 italic bg-accent/5 rounded-r-xl">
+                    <strong className="text-accent uppercase text-xs font-mono tracking-wider not-italic block mb-1">Fair honesty up front:</strong>
+                    Taxicolor is a new venture. I'm not going to tell you we've shipped 10,000 containers or managed 500 suppliers. We haven't — yet.
+                  </p>
+
+                  <div className="space-y-4">
+                    <p className="text-foreground font-bold tracking-wide font-heading">But here's what I do bring:</p>
+                    
+                    <ul className="space-y-3.5 pl-1">
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent font-mono font-bold mt-1 text-xs">01.</span>
+                        <div>
+                          <strong className="text-foreground font-heading text-sm block sm:inline mr-1">Engineering discipline:</strong>
+                          <span className="text-slate-400 text-sm">I approach sourcing the way I approach system design: trace every step, find the inefficiencies, fix them at the root. No black boxes, no hand-waving.</span>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent font-mono font-bold mt-1 text-xs">02.</span>
+                        <div>
+                          <strong className="text-foreground font-heading text-sm block sm:inline mr-1">Boots on the ground:</strong>
+                          <span className="text-slate-400 text-sm">I visit factories in person. I'm not sitting in an office repackaging supplier photos. If I recommend a factory, I've walked through it.</span>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent font-mono font-bold mt-1 text-xs">03.</span>
+                        <div>
+                          <strong className="text-foreground font-heading text-sm block sm:inline mr-1">Full transparency on pricing:</strong>
+                          <span className="text-slate-400 text-sm">Flat monthly retainer. No hidden commission. No factory kickbacks.</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p className="text-sm text-slate-300 sm:leading-relaxed">
+                    My goal is simple: I build custom code tools to run our operations, and I personally audit the factory floor. When you partner with us, you aren't paying for sales reps or fancy offices. You are paying for a direct, optimized, and transparent path to the factory floor.
+                  </p>
+
+                  <p className="font-bold text-foreground">
+                    If you want an honest, engineer-led partner in China, let's talk.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p className="font-semibold text-foreground text-base sm:text-lg">
+                    在大厂做了多年的全栈系统架构师之后，我现在在做一件完全不同的事情：建立一个真正透明的“技术型”采购合伙人服务，直接连接全球买家与中国源头工厂，彻底剥离层层中间商。
+                  </p>
+                  
+                  <p className="border-l-2 border-accent/40 pl-4 py-1 text-slate-400 italic bg-accent/5 rounded-r-xl">
+                    <strong className="text-accent uppercase text-xs font-mono tracking-wider not-italic block mb-1">说句大实在话：</strong>
+                    Taxicolor 是一个全新的探索。我不想吹嘘我们已经运送了1万个集装箱或管理着500家工厂。我们还没有——至少目前还没有。
+                  </p>
+
+                  <div className="space-y-4">
+                    <p className="text-foreground font-bold tracking-wide font-heading">但我能为您带来这些：</p>
+                    
+                    <ul className="space-y-3.5 pl-1">
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent font-mono font-bold mt-1 text-xs">01.</span>
+                        <div>
+                          <strong className="text-foreground font-heading text-sm block sm:inline mr-1">工程师的严苛纪律：</strong>
+                          <span className="text-slate-400 text-sm">我用系统架构的思维来做采购：追踪每一步骤，找出低效环节，从底层根治。这里没有黑盒，没有敷衍。</span>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent font-mono font-bold mt-1 text-xs">02.</span>
+                        <div>
+                          <strong className="text-foreground font-heading text-sm block sm:inline mr-1">扎根车间现场：</strong>
+                          <span className="text-slate-400 text-sm">我亲自驻扎在工厂一线。我不会坐在办公室里用厂家发来的照片装点门面。如果我向您推荐一家工厂，那绝对是我亲自走过每一个车间的结果。</span>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-accent font-mono font-bold mt-1 text-xs">03.</span>
+                        <div>
+                          <strong className="text-foreground font-heading text-sm block sm:inline mr-1">100% 价格穿透：</strong>
+                          <span className="text-slate-400 text-sm">固定月度服务费，没有隐形抽点，没有工厂回扣。</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p className="text-sm text-slate-300 sm:leading-relaxed">
+                    我的目标非常简单：我编写定制代码来运行我们的所有采购流程，我亲自睡在车间审计公差。当您选择与我合作时，您不需要为昂贵的写字楼或销售团队买单。您支付的，是直通工厂底价与彻底优化的技术通道。
+                  </p>
+
+                  <p className="font-bold text-foreground">
+                    如果您想在中国拥有一位诚实、由工程师亲自带队的技术采购合伙人，期待您的邮件。
+                  </p>
+                </>
+              )}
+
+              {/* Signature and B2B mailto Link */}
+              <div className="pt-8 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+                <div className="space-y-1.5">
+                  <span className="text-[10px] text-slate-500 uppercase tracking-widest block font-mono">MANIFESTO AUTHOR</span>
+                  <div className="flex items-baseline gap-3">
+                    <span className="text-lg font-black text-foreground font-heading">Tunan</span>
+                    {/* Hand-written signature style */}
+                    <span className="font-serif italic text-accent text-3xl font-light tracking-wide pl-2 border-l border-border select-none">
+                      Tunan
+                    </span>
+                  </div>
+                  <span className="text-[10px] text-slate-450 font-bold block">{lang === 'en' ? "Founder, Taxicolor" : "Taxicolor 创始人 / 全栈系统架构师"}</span>
+                </div>
+
+                <a 
+                  href="mailto:tunan@taxicolor.com?subject=B2B Sourcing Partnership Inquiry"
+                  className="flex items-center justify-center gap-2 px-6 py-4 bg-accent hover:bg-accent/90 text-button-text font-black rounded-2xl shadow-lg shadow-accent/20 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] font-heading text-xs tracking-wider uppercase group"
+                >
+                  <Send className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <span>{lang === 'en' ? "Secure Direct Partnership" : "直连技术合伙人"}</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -540,7 +540,7 @@ export default function GlobalSourcingHome() {
             {/* Minimalist SVG Emblem */}
             <Image 
               src="/img/taxicolor_logo_flat.webp" 
-              alt="Takin Logo" 
+              alt="Taxicolor Logo" 
               width={36} 
               height={36} 
               className="w-9 h-9 drop-shadow-[0_0_8px_var(--accent-glow)] transform hover:scale-105 transition-transform duration-300 object-contain" 
@@ -766,7 +766,7 @@ export default function GlobalSourcingHome() {
                   {/* Large Premium Golden SVG Emblem */}
                   <Image 
                     src="/img/taxicolor_logo_flat.webp" 
-                    alt="Takin Logo" 
+                    alt="Taxicolor Logo" 
                     width={176} 
                     height={176} 
                     className="w-44 h-44 drop-shadow-[0_0_20px_var(--accent-glow)] group-hover:scale-105 transition-transform duration-500 object-contain" 
@@ -1404,7 +1404,7 @@ export default function GlobalSourcingHome() {
             {/* Minimalist SVG Emblem */}
             <Image 
               src="/img/taxicolor_logo_flat.webp" 
-              alt="Takin Logo" 
+              alt="Taxicolor Logo" 
               width={32} 
               height={32} 
               className="w-8 h-8 drop-shadow-[0_0_8px_var(--accent-glow)] transform hover:scale-105 transition-transform duration-300 object-contain" 

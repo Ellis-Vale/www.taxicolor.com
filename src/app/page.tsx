@@ -33,22 +33,22 @@ const TRANSLATIONS = {
     announcement: "600+ OE Cross-Reference Filter Catalog deployed at filtration.taxicolor.com for direct RFQ routing.",
     enterpriseBadge: "Enterprise Live",
     monogramTag: "BUDORCAS B2B",
-    navEngines: "Trade Engines",
+    navEngines: "Capabilities",
     navTotem: "The Totem",
-    navTransparency: "Flat-Fee Sourcing",
-    navOps: "Ground Operations",
-    navCalculator: "Cost Calculator",
+    navTransparency: "How We Work",
+    navOps: "Ground Ops",
+    navCalculator: "Inquire",
     btnCatalog: "Browse Catalog",
-    
+
     // Hero
-    heroBadge: "Budorcas taxicolor • Factory Direct",
-    heroSlogan: "Cabin Air Filters & OEM Filtration.",
-    heroHighlight: "Shanghai Factory Direct.",
-    heroDesc: "Custom code scans supplier databases to isolate verified manufacturers. On-site technical audits of production tolerances. Customs streamlined through Shanghai Waigaoqiao FTZ. All for a flat retainer — no hidden markups.",
-    btnExplore: "Explore Trade Engines",
-    btnCatalogHero: "Automotive OEM Catalog",
-    statMapped: "Auto SKU Mapped",
-    statMarkup: "Billing Markup",
+    heroBadge: "Budorcas taxicolor • Shanghai",
+    heroSlogan: "Smart Sourcing from China's Factory Floor.",
+    heroHighlight: "Engineer-Led. Factory-Verified.",
+    heroDesc: "Custom code scans supplier databases to isolate verified manufacturers. On-site technical audits of production tolerances. Customs streamlined through Shanghai Waigaoqiao FTZ. A tech-native procurement partner on the ground in China.",
+    btnExplore: "How We Work",
+    btnCatalogHero: "Filter Catalog",
+    statMapped: "OE SKUs Tracked",
+    statMarkup: "Factory Audits",
     statSync: "Edge CDN Sync",
     
     // Address bar simulation
@@ -78,104 +78,67 @@ const TRANSLATIONS = {
     storyBadge: "BEHIND THE NAME",
     storyTitle: "Taxicolor is not the color of a taxi.",
     storyPara1: "It is the scientific classification of the Takin (Budorcas taxicolor)—a legendary, robust beast that carves its path along the unforgiving, vertical cliffs of the Himalayas at altitudes of 3,000 meters.",
-    storyPara2: "Strong, rare, and completely off-the-beaten-path, the Budorcas taxicolor is our spiritual totem. Standard trading corporations rely on simple email markups and crowded wholesale markets. We operate like the Takin: resiliently scaling high-altitude manufacturing barriers, auditing engineering specifications on the factory floor, and securing robust supply lines directly to you.",
+    storyPara2: "Strong, rare, and completely off-the-beaten-path, the Budorcas taxicolor is our spiritual totem. We approach global sourcing the same way the Takin navigates the Himalayas: resiliently scaling manufacturing barriers, auditing engineering specifications on the factory floor, and building robust supply lines directly from workshop to warehouse.",
     storyBullet1: "3,000m Alpine Totem",
     storyBullet2: "Absolute Resilience",
     storyFooterText: "BUDORCAS TAXICOLOR",
     
-    // Transparency
-    transBadge: "DEEP TRANSPARENCY",
-    transTitle: "100% Price Penetration. Pure Sourcing.",
-    transDesc: "Traditional trade agents claim '0% commission' yet collect opaque factory kickbacks, inflating direct unit costs by 5% to 15%. I run Taxicolor on a transparent monthly flat fee because B2B sourcing should be aligned with your profit — not hidden markups.",
-    
-    opaqueBadge: "Traditional Import Agent",
-    opaqueModel: "OPAQUE COMMISSION",
-    opaqueTitle: "Hidden Invoice Inflation & Conflicted Interests",
-    opaqueText: "Traditional agents restrict ex-works invoice visibility. They control supplier contacts, manipulate batch prices, and secure hidden manufacturer rebates while claiming simple flat fees. You ultimately bear the inflated cost margins.",
-    opaqueBullet1: "Opaque Unit Pricing: Direct factory raw invoices are strictly withheld.",
-    opaqueBullet2: "Opaque Quality Auditing: Standard sourcing sales agents lack engineering assets to audit physical tolerances.",
-    opaqueBullet3: "Supplier Lock-in: They hide factory identities, denying you real-time supply chain sovereignty.",
-    
-    transparentBadge: "Tunan's Flat-Fee Sourcing Partner",
-    transparentModel: "100% TRANSPARENT",
-    transparentTitle: "Direct Factory Billing & Complete Tech Sovereignty",
-    transparentText: "I act as your direct local engineering representative and software interface in China. Factory invoices go directly to your desk with 0% markup. You only pay a transparent, predictable monthly flat retainer for my boots-on-the-ground time and self-developed code.",
-    transparentBullet1: "100% Price Penetration: Original ex-works invoices. You pay precisely what the manufacturer charges.",
-    transparentBullet2: "Hands-On Workshop QA: Run by former big-tech software and process architects, auditing assembly line PLC controls.",
-    transparentBullet3: "Self-Custodial Databases: Direct ownership of all supplier coordinates, technical specifications, and shipping documentation.",
+    // How We Work (replaces old transparency comparison)
+    transBadge: "HOW WE WORK",
+    transTitle: "A Sourcing Partner Who Actually Visits the Factory Floor.",
+    transDesc: "Most sourcing happens over email. Ours happens in person. We combine boots-on-the-ground factory knowledge with custom software tools to find, verify, and deliver quality products from China's manufacturing clusters.",
+
+    howStep1Title: "Find the Right Factory",
+    howStep1Desc: "Custom code scans supplier registries to identify verified manufacturers — not trading companies posing as factories. We match your specs to the right production line.",
+    howStep2Title: "Audit Before You Commit",
+    howStep2Desc: "We walk the factory floor. We check mold quality, raw material grades, and assembly line tolerances. You get photos, measurements, and honest feedback before a single dollar leaves your account.",
+    howStep3Title: "Ship With Confidence",
+    howStep3Desc: "From production monitoring to pre-shipment inspection to customs documentation through Shanghai Waigaoqiao FTZ — we handle the logistics so you focus on selling.",
     
     // Engines Showcase
     engineBadge: "TAXICOLOR TRADE ENGINES",
-    engineTitle: "Real-World Operations. Encapsulated in Software.",
-    engineDesc: "I build my own trade code tools. Click through the interfaces I designed to replace slow middleman paperwork with automated Python and Next.js scripts, directly synchronized with physical workshop checks.",
-    engineSpec: "Engine Specifications",
-    engineBilling: "Transparent Billing",
-    engineSelfService: "Self-Service Module",
-    engineControls: "📱 ENGINE CONTROLS INTERFACE",
-    engineAudit: "🌍 LOCALIZED LOGISTICS AUDIT",
-    
+    engineTitle: "Tools We Use to Keep Quality Consistent.",
+    engineDesc: "Custom-built software that automates the tedious parts of global sourcing — supplier verification, document generation, compliance tracking — so we can focus on what matters: the factory floor.",
+    engineSpec: "Engine Specifications",    
     // 6 Engines
     engines: [
       {
         name: 'Direct-to-Source (D2S) Factory Engine',
         badge: 'DISCOVERY INGEST',
-        desc: 'Bypasses markup-heavy trading agencies by scanning regional corporate databases and ex-factory registrations using semantic trade algorithms to isolate verified tier-1 manufacturers.',
-        cost: '$99 - $249 / Mo',
-        buyerName: 'Sophia Lin',
-        buyerTitle: 'E-commerce Seller, New York',
-        features: ['Tier-1 Manufacturer Verification rating', 'Real-time ex-works price baseline', 'Bilingual instant-translate dialogs']
+        desc: 'Scans regional corporate databases and ex-factory registrations using semantic trade algorithms to isolate verified tier-1 manufacturers — skipping the middle layers.',        features: ['Tier-1 Manufacturer Verification rating', 'Real-time ex-works price baseline', 'Bilingual instant-translate dialogs']
       },
       {
         name: 'QA & Tolerance Prediction Engine',
         badge: 'RISK CALIBRATION',
-        desc: 'Cross-checks manufacturing quality by analyzing high-resolution parts photos, pleat structures, and factory certificates against official laboratory standards and historic component failure datasets.',
-        cost: '$149 / Report',
-        buyerName: 'Aarav Patel',
-        buyerTitle: 'Procurement Director, London',
-        features: ['Certificate authenticity verification', 'Materials & pleat tolerance heatmap analysis', 'Suggested on-site technical QA guidelines']
+        desc: 'Cross-checks manufacturing quality by analyzing high-resolution parts photos, pleat structures, and factory certificates against official laboratory standards and historic component failure datasets.',        features: ['Certificate authenticity verification', 'Materials & pleat tolerance heatmap analysis', 'Suggested on-site technical QA guidelines']
       },
       {
         name: 'Autonomous TradeDoc & Auditing Engine',
         badge: 'CUSTOMS AUTOMATION',
-        desc: 'Generates export-ready, fully compliant shipping documentation (PI, PL, CO drafts) while auditing HS Codes and customs value statements to eliminate transit delays.',
-        cost: '$49 - $199 / Mo',
-        buyerName: 'Mateo Silva',
-        buyerTitle: 'Logistics Lead, Miami Port',
-        features: ['Dynamic PI-PL-Customs valuation reconciliation', 'Automated EU/US custom template rendering', 'Direct integration with freight carrier APIs']
+        desc: 'Generates export-ready, fully compliant shipping documentation (PI, PL, CO drafts) while auditing HS Codes and customs value statements to eliminate transit delays.',        features: ['Dynamic PI-PL-Customs valuation reconciliation', 'Automated EU/US custom template rendering', 'Direct integration with freight carrier APIs']
       },
       {
         name: 'Consolidated Supply Chain Control Center',
         badge: 'LOGISTICS CONTROL',
-        desc: 'Consolidates 5-15 separate component factories into a single real-time dashboard. Uses predictive logistics models to forecast shipping bottlenecks and tracking delays.',
-        cost: '$199 - $499 / Mo',
-        buyerName: 'Lars Lindqvist',
-        buyerTitle: 'VP Supply Chain, Stockholm',
-        features: ['Multi-supplier assembly line pacing', 'Port-bottleneck & weather risk calculation', 'Autonomous local safety-stock alerts']
+        desc: 'Consolidates 5-15 separate component factories into a single real-time dashboard. Uses predictive logistics models to forecast shipping bottlenecks and tracking delays.',        features: ['Multi-supplier assembly line pacing', 'Port-bottleneck & weather risk calculation', 'Autonomous local safety-stock alerts']
       },
       {
         name: 'Global Regulatory & Compliance Watchdog',
         badge: 'COMPLIANCE PATHWAYS',
         desc: 'Maps custom regulatory pathways based on destination market standards, sending automatic notifications on changes (REACH directives, EU Battery Passports, etc.).',
-        cost: 'Free Basic Tier',
-        buyerName: 'Amara Diop',
-        buyerTitle: 'Compliance Counsel, Paris',
         features: ['Mandatory certificate compliance pathways', 'ECHA REACH / RoHS dynamic monitoring', 'Encrypted global compliance repository']
       },
       {
         name: 'Technical Cost-Modeling Copilot',
         badge: 'PROCUREMENT INTELLIGENCE',
-        desc: 'Applies deep indexing of raw material index charts and localized manufacturing margins to establish target ex-works prices for high-precision business negotiations.',
-        cost: '$99 / Mo',
-        buyerName: 'Zayd Al-Mansoori',
-        buyerTitle: 'Managing Partner, Dubai',
-        features: ['Ex-factory raw material price baseline tracking', 'Contract payment structure risk scoring', 'Technical blueprint cost estimation models']
+        desc: 'Applies deep indexing of raw material index charts and localized manufacturing margins to establish target ex-works prices for high-precision business negotiations.',        features: ['Ex-factory raw material price baseline tracking', 'Contract payment structure risk scoring', 'Technical blueprint cost estimation models']
       }
     ],
     
     // Ground Operations
     opsBadge: "YOUR ON-SITE AUDIT LEADER",
     opsTitle: "A Systems Architect on the Factory Floor.",
-    opsPara1: "Standard import intermediaries act purely as brokers, focused entirely on markup percentages while remaining blind to technical specifications. We approach global sourcing differently.",
+    opsPara1: "Most sourcing agents operate from a desk. We operate from the factory floor. The difference matters when a production tolerance of 0.1mm determines whether your shipment passes customs inspection.",
     opsPara2: "Tunan, a veteran big-tech system architect, personally audits parts manufacturers. We analyze mold structures, inspect raw steel grades, and calibrate robotic assembly lines to guarantee every component batch adheres rigorously to digital blueprint standards.",
     opsTitle1: "Bilingual Engineering Dialogs",
     opsDesc1: "Seamless, fluent technical negotiation directly with foreign managers. Zero translations friction.",
@@ -195,7 +158,7 @@ const TRANSLATIONS = {
     calcAnnualToggle: "Annual Billing (-20% Off)",
     calcTradAgent: "Traditional Sourcing Agent",
     calcTradDesc: "Based on standard 5% commission markup calculated against average shipment volume values.",
-    calcFlatFee: "Tunan's Flat-Fee Sourcing Partner",
+    calcFlatFee: "Taxicolor Sourcing",
     calcFlatDesc: "Zero markup. Direct access to raw factory ex-works invoice + flat service retainer.",
     calcYearEst: "/ Year Est.",
     calcRetained: "Budget Safely Retained",
@@ -218,9 +181,9 @@ const TRANSLATIONS = {
     formSuccessDesc: "I'll review your inquiry and respond within 24 hours. Talk soon — Tunan",
 
     // CTA Callout
-    ctaBadge: "Direct-to-Source Supply Chains",
-    ctaTitle: "Stop Overpaying Intermediaries. Secure Your Direct Industrial Supply Line.",
-    ctaDesc: "Acquire a dynamic digital catalog for your SKUs. Monitor manufacturing tolerances, verify international certifications, and trace shipments on-site for a single predictable subscription.",
+    ctaBadge: "Direct Factory Sourcing",
+    ctaTitle: "Ready to Find Your Next Factory Partner. Let's Talk.",
+    ctaDesc: "Tell us what you need. We'll find the right factory, audit the production line, and manage logistics through Shanghai Waigaoqiao FTZ. No guesswork — just a partner on the ground.",
     
     // Footer
     footerSlogan: "Global Sourcing Partner",
@@ -232,21 +195,21 @@ const TRANSLATIONS = {
     monogramTag: "Taxicolor B2B Trade",
     navEngines: "交易引擎",
     navTotem: "品牌图腾",
-    navTransparency: "平价采购",
+    navTransparency: "工作方式",
     navOps: "地面运作",
-    navCalculator: "成本计算器",
+    navCalculator: "询价",
     btnCatalog: "浏览规格库",
     
     // Hero
-    heroBadge: "Budorcas taxicolor • 直连工厂",
-    heroSlogan: "高海拔采购精准度，",
-    heroHighlight: "重塑供应链毛利结构。",
-    heroDesc: "自研代码扫描企业注册底册，直筛一级工厂。亲赴车间实地审计机械公差。上海外高桥自贸区一站式清关。仅收透明固定服务费，零中间商返点。",
-    btnExplore: "探索采购引擎",
-    btnCatalogHero: "汽车零件规格库",
-    statMapped: "已映射零件规格",
-    statMarkup: "账单中间加价",
-    statSync: "边缘计算加速",
+    heroBadge: "Budorcas taxicolor • 上海",
+    heroSlogan: "来自中国工厂一线的智能采购。",
+    heroHighlight: "工程师带队。工厂实地验证。",
+    heroDesc: "自研代码扫描企业注册底册，直筛一级工厂。亲赴车间实地审计机械公差。上海外高桥自贸区一站式清关。一位懂技术的中国本土采购伙伴。",
+    btnExplore: "我们的工作方式",
+    btnCatalogHero: "滤清器规格库",
+    statMapped: "跟踪 OE 型号",
+    statMarkup: "工厂实地审计",
+    statSync: "全球边缘加速",
     
     // Address bar simulation
     addressBar: "www.taxicolor.com/showroom",
@@ -275,7 +238,7 @@ const TRANSLATIONS = {
     storyBadge: "我们的品牌起源",
     storyTitle: "Taxicolor 不是出租车的颜色。",
     storyPara1: "它是羚牛的拉丁学名（*Budorcas taxicolor*）——一种生活在喜马拉雅山脉 3,000 米海拔悬崖峭壁上的珍稀野兽。",
-    storyPara2: "强壮、罕见、不走寻常路，这正是我们的精神图腾。传统的贸易中介只会在邮件里赚取差价，在喧闹的批发市场里倒手。我们像 Taxicolor 一样行动：坚韧地跨越 3000 米的工厂技术壁垒，直接驻扎在制造车间审计每道工序的精密公差，为你搭建直连源头的高清透明供应链。",
+    storyPara2: "强壮、罕见、不走寻常路，这正是我们的精神图腾。我们像 Taxicolor 一样行动：坚韧地跨越制造壁垒，深入车间审计每道工序，为你搭建直连源头的供应链。",
     storyBullet1: "3000米雪线精神图腾",
     storyBullet2: "极限坚韧与开路精神",
     storyFooterText: "BUDORCAS TAXICOLOR",
@@ -283,89 +246,49 @@ const TRANSLATIONS = {
     // Transparency
     transBadge: "极致透明",
     transTitle: "100% 穿透原厂底价，纯粹代采购。",
-    transDesc: "传统贸易中介宣称“0% 佣金”，却在暗中收受厂家回扣，使得实际采购成本虚高 5% 到 15%。图南带领 Taxicolor 实行“纯平价订阅服务费”，将最真实的出厂底价账单直接穿透呈现给您。",
-    
-    opaqueBadge: "传统进出口代理中介模式",
-    opaqueModel: "灰色加价模式",
-    opaqueTitle: "暗箱加价与利益冲突",
-    opaqueText: "传统代理会将真实的工厂出厂发票层层包裹，限制你与源头工厂直接对话，甚至操纵批量单价赚取隐性返利。所有的多余溢价，最终全部压在你的采购预算上。",
-    opaqueBullet1: "加价出厂账单：拒绝提供原始出厂增值税发票，层层信息阻断。",
-    opaqueBullet2: "空洞的质量把控：仅为业务员对接，缺乏工科背景和工具去现场量化工艺公差。",
-    opaqueBullet3: "供应商绑定：严密防范你获得工厂联系方式，剥夺你的供应链自主权。",
-    
-    transparentBadge: "图南平价技术合伙人服务",
-    transparentModel: "100% 穿透真实",
-    transparentTitle: "直付工厂 & 拥有完整的供应链主权",
-    transparentText: "我是您在中国本土的工程师眼睛与自研系统界面。所有货款100%直接向工厂底价支付，0%加价。您只需支付一份固定可预测的月度服务费，买断我的车间现场时间与全套自研流程脚本。",
-    transparentBullet1: "100% 底价穿透：直面出厂原始底价，你付的每一分钱都付给价值本身。",
-    transparentBullet2: "实地技术质检：由前大厂资深全栈系统设计架构师带队，到车间现场对 PLC 流水线参数进行调试。",
-    transparentBullet3: "自主掌握数据库：所有的源头工厂联系人、工程图纸、海运发票均保存在你自己的云端，永不流失。",
+    transDesc: “大多数采购靠邮件往来，我们的工作在工厂车间里完成。我们将一线工厂经验与自研软件工具结合，在中国制造业集群中为你找到、验证、交付优质产品。”,
     
     // Engines Showcase
     engineBadge: "TAXICOLOR 数字化交易引擎",
-    engineTitle: "用软件封装的工厂地面作业力。",
+    engineTitle: "自研工具，保证品质稳定。",
     engineDesc: "我不玩“发邮件加表格”的手工低效外贸。点击下方由我亲自编写的代码模块，看我们如何用自动化的 Python、Next.js 脚本，直接连通制造车间的实地公差数据。",
-    engineSpec: "引擎技术规格",
-    engineBilling: "透明订阅计费",
-    engineSelfService: "自助应用模块",
-    engineControls: "📱 引擎操控端后台",
-    engineAudit: "🌍 实地海运及合规现场",
-    
+    engineSpec: "引擎技术规格",    
     // 6 Engines
     engines: [
       {
         name: '直连工厂 D2S 发现引擎',
         badge: '源头探查',
-        desc: '利用语义化贸易解析算法，扫描中国各省市的企业注册底册、海关备案、Made-in-China等数据库，直接穿透重重中介，筛选出真正具备一级出厂资质的实体工厂。',
-        cost: '月度 $99 - $249',
-        buyerName: 'Sophia Lin',
-        buyerTitle: '亚马逊大卖家, 纽约',
-        features: ['源头厂资质验证评估','实地出厂底价横向比对','跨国即时对话自动翻译']
+        desc: '扫描各省市企业注册底册、海关备案和制造数据库，跨越多层中间环节，筛选出真正具备一级出厂资质的实体工厂。',
+        cost: '月度 $99 - $249',        features: ['源头厂资质验证评估','实地出厂底价横向比对','跨国即时对话自动翻译']
       },
       {
         name: '工艺公差 & 质检预测引擎',
         badge: '风险量化',
-        desc: '通过上传高分辨率零件细节照片、折褶结构数据和实验室报告，利用历史工艺缺陷数据集和物理公差分析，对潜在的批次材料问题提供提前预测和现场干预建议。',
-        cost: '$149 / 报告',
-        buyerName: 'Aarav Patel',
-        buyerTitle: '采购总监, 伦敦',
-        features: ['权威检测证书真伪校验','材料及折褶公差热力图分析','车间实地量化质检卡生成']
+        desc: '通过上传高分辨率零件细节照片、折褶结构数据和实验室报告，利用历史工艺缺陷数据集和物理公差分析，对潜在的批次材料问题提供提前预测和现场干预建议。',        features: ['权威检测证书真伪校验','材料及折褶公差热力图分析','车间实地量化质检卡生成']
       },
       {
         name: '自主外贸文档 & 报关审计引擎',
         badge: '报关自动化',
         desc: '全自动生成符合国际货运及海关标准的进出口单据草稿（PI, PL, 产地证等），同时根据目的港标准审查 HS Code 和申报价值，极大化减少清关扣留风险。',
-        cost: '月度 $49 - $199',
-        buyerName: 'Mateo Silva',
-        buyerTitle: '物流负责人, 迈阿密港',
-        features: ['PI-PL与海关申报价值比对','自动适配欧盟/美国合规模板','直连主流船务物流系统 APIs']
+        cost: '月度 $49 - $199',        features: ['PI-PL与海关申报价值比对','自动适配欧盟/美国合规模板','直连主流船务物流系统 APIs']
       },
       {
         name: '合并供应链实时调度中心',
         badge: '物流追踪',
         desc: '将你在 5-15 家独立零配件工厂的货期、排产进度和散装货运信息合并在同一个大屏仪表盘上。利用智能物流模型预测港口拥堵，确保多批次能同时装柜。',
-        cost: '月度 $199 - $499',
-        buyerName: 'Lars Lindqvist',
-        buyerTitle: '供应链副总裁, 斯德哥尔摩',
-        features: ['多工序上下游配套排产分析','港口气候及拥堵时效预警','安全库存水位警戒智能推送']
+        cost: '月度 $199 - $499',        features: ['多工序上下游配套排产分析','港口气候及拥堵时效预警','安全库存水位警戒智能推送']
       },
       {
         name: '全球准入及合规雷达',
         badge: '标准与法规',
         desc: '根据你要进入的销售国家，自动映射该产品的技术准入路径，对最新的电池护照法案、REACH毒物指令更新进行实时监测，避免发生越线召回。',
-        cost: '免费基础版',
-        buyerName: 'Amara Diop',
-        buyerTitle: '合规法律顾问, 巴黎',
-        features: ['目的港强制认证路径导航','ECHA 限制准入目录动态监控','机密合规证书安全托管仓']
+        cost: '免费基础版',        features: ['目的港强制认证路径导航','ECHA 限制准入目录动态监控','机密合规证书安全托管仓']
       },
       {
         name: '工艺拆解与成本测算副驾驶',
         badge: '精算评估',
         desc: '深度解析中国源头材料指数走势、电费成本和压铸件标准毛利，帮助你在和源头厂谈判前，生成客观精确的核价分析单，锁定最有力的谈判目标。',
-        cost: '月度 $99',
-        buyerName: 'Zayd Al-Mansoori',
-        buyerTitle: '管理合伙人, 迪拜',
-        features: ['上游原材料指数动态跟踪表','合同账期结构安全度评分','技术工程图纸智能核算评估']
+        cost: '月度 $99',        features: ['上游原材料指数动态跟踪表','合同账期结构安全度评分','技术工程图纸智能核算评估']
       }
     ],
     
@@ -416,8 +339,8 @@ const TRANSLATIONS = {
 
     // CTA Callout
     ctaBadge: "直连源头厂 掌控供应链",
-    ctaTitle: "告别层层代理剥削。拥有自主受控的工业供应链。",
-    ctaDesc: "即刻为你的 SKU 锁定源头出厂底价。监控车间公差，验证国际准入，全程物流可视，只需一份透明可预测的订阅。",
+    ctaTitle: "准备找到你的下一个工厂伙伴。我们谈谈。",
+    ctaDesc: "告诉我们你的需求。帮你找到对口的工厂，审计生产线，通过上海外高桥自贸区管理物流。不用猜，不用赌——地面上有伙伴。",
     
     // Footer
     footerSlogan: "直连全球采购技术伙伴",
@@ -837,62 +760,29 @@ export default function GlobalSourcingHome() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* The Traditional Agent Model */}
-            <div className="bg-white/[0.01] rounded-3xl p-8 sm:p-10 border border-border text-left space-y-6">
-              <div className="flex justify-between items-center">
-                <span className="px-3 py-1 text-[9px] font-extrabold tracking-widest text-red-400 bg-red-950/20 border border-red-900/30 rounded uppercase font-mono">
-                  {t.opaqueBadge}
-                </span>
-                <span className="text-xs font-bold text-slate-500 font-mono">{t.opaqueModel}</span>
-              </div>
-              <h3 className="font-heading text-xl font-bold text-foreground">{t.opaqueTitle}</h3>
-              <p className="text-xs text-[#64748B] dark:text-slate-400 leading-relaxed font-body">
-                {t.opaqueText}
-              </p>
-              <ul className="space-y-3 pt-4 border-t border-border font-body text-xs text-[#64748B] dark:text-slate-400">
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 font-bold shrink-0 mt-0.5">✕</span>
-                  <span>{t.opaqueBullet1}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 font-bold shrink-0 mt-0.5">✕</span>
-                  <span>{t.opaqueBullet2}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-red-500 font-bold shrink-0 mt-0.5">✕</span>
-                  <span>{t.opaqueBullet3}</span>
-                </li>
-              </ul>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Step 1: Find */}
+            <div className="glass-card rounded-3xl p-8 border border-border text-left space-y-4 relative overflow-hidden group hover:border-accent/20 transition-colors">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-accent/3 rounded-full blur-2xl group-hover:bg-accent/8 transition-colors" />
+              <span className="font-mono text-4xl font-black text-accent/20">01</span>
+              <h3 className="font-heading text-lg font-black text-foreground relative z-10">{t.howStep1Title}</h3>
+              <p className="text-xs text-slate-400 leading-relaxed font-body relative z-10">{t.howStep1Desc}</p>
             </div>
 
-            {/* The Taxicolor Flat-Fee Tech Sourcing Model */}
-            <div className="bg-[#0F131C] dark:bg-panel rounded-3xl p-8 sm:p-10 border border-white/10 text-left space-y-6 relative overflow-hidden shadow-2xl">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-2xl pointer-events-none" />
-              <div className="flex justify-between items-center relative z-10">
-                <span className="px-3 py-1 text-[9px] font-extrabold tracking-widest text-button-text bg-accent rounded uppercase font-mono">
-                  {t.transparentBadge}
-                </span>
-                <span className="text-xs font-bold text-accent font-mono">{t.transparentModel}</span>
-              </div>
-              <h3 className="font-heading text-xl font-bold text-white relative z-10">{t.transparentTitle}</h3>
-              <p className="text-xs text-slate-300 dark:text-slate-200 leading-relaxed font-body relative z-10">
-                {t.transparentText}
-              </p>
-              <ul className="space-y-3 pt-4 border-t border-white/5 font-body text-xs text-slate-350 dark:text-slate-300 relative z-10">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent font-bold shrink-0 mt-0.5">✓</span>
-                  <span>{t.transparentBullet1}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent font-bold shrink-0 mt-0.5">✓</span>
-                  <span>{t.transparentBullet2}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent font-bold shrink-0 mt-0.5">✓</span>
-                  <span>{t.transparentBullet3}</span>
-                </li>
-              </ul>
+            {/* Step 2: Audit */}
+            <div className="glass-card rounded-3xl p-8 border border-border text-left space-y-4 relative overflow-hidden group hover:border-accent/20 transition-colors">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-accent/3 rounded-full blur-2xl group-hover:bg-accent/8 transition-colors" />
+              <span className="font-mono text-4xl font-black text-accent/20">02</span>
+              <h3 className="font-heading text-lg font-black text-foreground relative z-10">{t.howStep2Title}</h3>
+              <p className="text-xs text-slate-400 leading-relaxed font-body relative z-10">{t.howStep2Desc}</p>
+            </div>
+
+            {/* Step 3: Ship */}
+            <div className="glass-card rounded-3xl p-8 border border-border text-left space-y-4 relative overflow-hidden group hover:border-accent/20 transition-colors">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-accent/3 rounded-full blur-2xl group-hover:bg-accent/8 transition-colors" />
+              <span className="font-mono text-4xl font-black text-accent/20">03</span>
+              <h3 className="font-heading text-lg font-black text-foreground relative z-10">{t.howStep3Title}</h3>
+              <p className="text-xs text-slate-400 leading-relaxed font-body relative z-10">{t.howStep3Desc}</p>
             </div>
           </div>
         </div>
@@ -960,13 +850,6 @@ export default function GlobalSourcingHome() {
                   </div>
                 </div>
 
-                <div className="pt-4 flex items-center justify-between bg-white/[0.02] rounded-2xl p-4 border border-border">
-                  <div>
-                    <span className="text-[8px] font-extrabold uppercase text-slate-400 font-heading block font-mono">{t.engineBilling}</span>
-                    <span className="text-sm font-black text-foreground font-heading">{t.engines[activeEngineTab].cost}</span>
-                  </div>
-                  <span className="text-[10px] font-bold text-slate-400 font-mono">{t.engineSelfService}</span>
-                </div>
               </div>
 
               {/* Graphic Display Side: App UI + Buyer Scene Side-by-Side Carousel */}
@@ -997,12 +880,6 @@ export default function GlobalSourcingHome() {
                       className="object-cover opacity-80 transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-[#080C14]/10 pointer-events-none" />
-                    
-                    {/* Buyer Label */}
-                    <div className="absolute bottom-3 left-3 right-3 bg-panel backdrop-blur-md rounded-xl p-2.5 text-left border border-border shadow">
-                      <span className="text-[9px] font-bold text-foreground block font-heading">{t.engines[activeEngineTab].buyerName}</span>
-                      <span className="text-[8px] font-medium text-slate-400 block font-body">{t.engines[activeEngineTab].buyerTitle}</span>
-                    </div>
                   </div>
                 </div>
 
@@ -1159,15 +1036,15 @@ export default function GlobalSourcingHome() {
                       <li className="flex items-start gap-3">
                         <span className="text-accent font-mono font-bold mt-1 text-xs">03.</span>
                         <div>
-                          <strong className="text-foreground font-heading text-sm block sm:inline mr-1">Full transparency on pricing:</strong>
-                          <span className="text-slate-400 text-sm">Flat monthly retainer. No hidden commission. No factory kickbacks.</span>
+                          <strong className="text-foreground font-heading text-sm block sm:inline mr-1">Honest about what we know and what we don't:</strong>
+                          <span className="text-slate-400 text-sm">You pay for the product. We earn our margin through competitive sourcing — not hidden fees.</span>
                         </div>
                       </li>
                     </ul>
                   </div>
 
                   <p className="text-sm text-slate-300 sm:leading-relaxed">
-                    My goal is simple: I build custom code tools to run our operations, and I personally audit the factory floor. When you partner with us, you aren't paying for sales reps or fancy offices. You are paying for a direct, optimized, and transparent path to the factory floor.
+                    My goal is simple: I build custom code tools to run our operations, and I personally audit the factory floor. When you partner with us, you get a direct, optimized path to verified factories — without the guesswork.
                   </p>
 
                   <p className="font-bold text-foreground">

@@ -18,6 +18,49 @@ jobs:
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Pillow
+        run: pip install Pillow
+
+      - name: Optimize Images and Code References
+        run: |
+          python3 -c "
+          import os
+          from PIL import Image
+
+          # 1. Convert all PNGs to WebP (q=85) and remove original PNGs
+          img_dir = 'public/img'
+          for root, dirs, files in os.walk(img_dir):
+              for f in files:
+                  if f.lower().endswith('.png'):
+                      png_p = os.path.join(root, f)
+                      webp_p = os.path.splitext(png_p)[0] + '.webp'
+                      try:
+                          Image.open(png_p).save(webp_p, 'WEBP', quality=85)
+                          os.remove(png_p)
+                          print(f'Converted {png_p} to {webp_p}')
+                      except Exception as e:
+                          print(f'Failed to convert {png_p}: {e}')
+
+          # 2. Update image references in codebase from .png to .webp
+          src_dir = 'src'
+          for root, dirs, files in os.walk(src_dir):
+              for f in files:
+                  if f.endswith(('.tsx', '.ts', '.js', '.jsx', '.css')):
+                      f_path = os.path.join(root, f)
+                      with open(f_path, 'r', encoding='utf-8') as file:
+                          content = file.read()
+                      if '.png' in content:
+                          content = content.replace('.png', '.webp')
+                          with open(f_path, 'w', encoding='utf-8') as file:
+                              file.write(content)
+                      print(f'Updated references in {f_path}')
+          "
+
       - name: Build
         run: npm run build
 

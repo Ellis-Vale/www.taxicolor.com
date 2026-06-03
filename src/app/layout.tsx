@@ -13,12 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Taxicolor — Direct-to-Source Global Sourcing Partner",
-  description: "AI-powered supplier discovery, quality prediction, trade documentation, and supply chain orchestration. Flat-fee, zero-markup sourcing from China's industrial clusters.",
-  keywords: ["China sourcing", "factory direct", "OEM manufacturing", "supply chain", "supplier verification", "procurement agent", "global sourcing"],
+  title: "Taxicolor — Automotive Filtration & OEM Manufacturing",
+  description: "Cabin air filters, OE cross reference, and custom OEM filtration solutions. Direct from Shanghai factory cluster.",
+  keywords: ["cabin air filter", "automotive filtration", "OE cross reference", "OEM manufacturing", "car filter", "pollen filter", "auto parts"],
+  icons: {
+    icon: "/icon.svg?v=2",
+  },
   openGraph: {
-    title: "Taxicolor — Direct-to-Source Sourcing Partner",
-    description: "Bypass middlemen. Direct factory billing, AI-driven quality auditing, and real-time supply chain control.",
+    title: "Taxicolor — Automotive Filtration & OEM",
+    description: "Cabin air filters and custom OEM filtration. Direct factory supply from Shanghai.",
     type: "website",
   },
 };

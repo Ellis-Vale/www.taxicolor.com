@@ -41,11 +41,11 @@ const TRANSLATIONS = {
     btnCatalog: "Browse Catalog",
     
     // Hero
-    heroBadge: "Budorcas taxicolor • Direct-to-Source",
-    heroSlogan: "High-Altitude Sourcing Precision.",
-    heroHighlight: "Direct Sourcing Saffron.",
+    heroBadge: "Budorcas taxicolor • Factory Direct",
+    heroSlogan: "Cabin Air Filters & OEM Filtration.",
+    heroHighlight: "Shanghai Factory Direct.",
     heroDesc: "I write custom code to crawl supplier registrations, run predictive QA models, personally audit industrial specifications in regional workshops, and streamline customs logistics directly through Waigaoqiao FTZ — all for a flat retainer. No hidden markups.",
-    btnExplore: "Explore Sourcing Engines",
+    btnExplore: "Explore Trade Engines",
     btnCatalogHero: "Automotive OEM Catalog",
     statMapped: "Auto SKU Mapped",
     statMarkup: "Billing Markup",
@@ -214,7 +214,7 @@ const TRANSLATIONS = {
   zh: {
     announcement: "已在 filtration.taxicolor.com 部署 6,000+ 汽车滤清器规格规格库，支持直连工厂询价。",
     enterpriseBadge: "企业级上线",
-    monogramTag: "羚牛 B2B 智能",
+    monogramTag: "Taxicolor B2B Trade",
     navEngines: "交易引擎",
     navTotem: "品牌图腾",
     navTransparency: "平价采购",
@@ -260,10 +260,10 @@ const TRANSLATIONS = {
     storyBadge: "我们的品牌起源",
     storyTitle: "Taxicolor 不是出租车的颜色。",
     storyPara1: "它是羚牛的拉丁学名（*Budorcas taxicolor*）——一种生活在喜马拉雅山脉 3,000 米海拔悬崖峭壁上的珍稀野兽。",
-    storyPara2: "强壮、罕见、不走寻常路，这正是我们的精神图腾。传统的贸易中介只会在邮件里赚取差价，在喧闹的批发市场里倒手。我们像羚牛一样行动：坚韧地跨越 3000 米的工厂技术壁垒，直接驻扎在制造车间审计每道工序的精密公差，为你搭建直连源头的高清透明供应链。",
+    storyPara2: "强壮、罕见、不走寻常路，这正是我们的精神图腾。传统的贸易中介只会在邮件里赚取差价，在喧闹的批发市场里倒手。我们像 Taxicolor 一样行动：坚韧地跨越 3000 米的工厂技术壁垒，直接驻扎在制造车间审计每道工序的精密公差，为你搭建直连源头的高清透明供应链。",
     storyBullet1: "3000米雪线精神图腾",
     storyBullet2: "极限坚韧与开路精神",
-    storyFooterText: "BUDORCAS TAXICOLOR 羚牛",
+    storyFooterText: "BUDORCAS TAXICOLOR",
     
     // Transparency
     transBadge: "极致透明",
@@ -397,28 +397,28 @@ const TRANSLATIONS = {
 
 const tradeEngines = [
   {
-    appUi: '/img/tunan_app_foreign_wechat_ui.png',
-    buyerScene: '/img/director_app_foreign_wechat_scene.png',
+    appUi: '/img/tunan_app_foreign_wechat_ui.webp',
+    buyerScene: '/img/director_app_foreign_wechat_scene.webp',
   },
   {
-    appUi: '/img/tunan_app_compliance_assistant_ui.png',
-    buyerScene: '/img/director_app_assistant_scene.png',
+    appUi: '/img/tunan_app_compliance_assistant_ui.webp',
+    buyerScene: '/img/director_app_assistant_scene.webp',
   },
   {
-    appUi: '/img/tunan_app_trade_manager_ui.png',
-    buyerScene: '/img/director_app_trade_manager_scene.png',
+    appUi: '/img/tunan_app_trade_manager_ui.webp',
+    buyerScene: '/img/director_app_trade_manager_scene.webp',
   },
   {
-    appUi: '/img/tunan_app_director_assistant_ui.png',
-    buyerScene: '/img/director_app_operation_scene.png',
+    appUi: '/img/tunan_app_director_assistant_ui.webp',
+    buyerScene: '/img/director_app_operation_scene.webp',
   },
   {
-    appUi: '/img/tunan_app_market_insight_ui.png',
-    buyerScene: '/img/director_app_market_insight_scene.png',
+    appUi: '/img/tunan_app_market_insight_ui.webp',
+    buyerScene: '/img/director_app_market_insight_scene.webp',
   },
   {
-    appUi: '/img/tunan_app_product_listing_ui.png',
-    buyerScene: '/img/director_app_video_factory_scene.png',
+    appUi: '/img/tunan_app_product_listing_ui.webp',
+    buyerScene: '/img/director_app_video_factory_scene.webp',
   },
 ];
 
@@ -464,19 +464,19 @@ export default function GlobalSourcingHome() {
 
   const heroShowcaseSlides = [
     {
-      img: '/img/oem_catalog_app_mockup.png',
+      img: '/img/oem_catalog_app_mockup.webp',
       title: t.heroShowcase[0].title,
       badge: t.heroShowcase[0].badge,
       desc: t.heroShowcase[0].desc
     },
     {
-      img: '/img/consumerlens_market_radar.png',
+      img: '/img/consumerlens_market_radar.webp',
       title: t.heroShowcase[1].title,
       badge: t.heroShowcase[1].badge,
       desc: t.heroShowcase[1].desc
     },
     {
-      img: '/img/director_client_workshop.png',
+      img: '/img/director_client_workshop.webp',
       title: t.heroShowcase[2].title,
       badge: t.heroShowcase[2].badge,
       desc: t.heroShowcase[2].desc
@@ -538,33 +538,13 @@ export default function GlobalSourcingHome() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3.5">
             {/* Minimalist SVG Emblem */}
-            <svg viewBox="0 0 100 100" className="w-9 h-9 drop-shadow-[0_0_8px_var(--accent-glow)] transform hover:scale-105 transition-transform duration-300">
-              <polygon points="50,3 90,26 90,74 50,97 10,74 10,26" fill="none" stroke={theme === 'china-direct' ? '#DE2910' : '#FFC700'} strokeWidth="2" strokeOpacity="0.4" />
-              
-              {/* Left Horn */}
-              <polygon points="50,42 30,22 12,28 28,42" fill="#FFE57F" />
-              <polygon points="30,22 12,28 32,32" fill="#E65100" opacity="0.4" />
-
-              {/* Right Horn */}
-              <polygon points="50,42 70,22 88,28 72,42" fill="#FFE57F" />
-              <polygon points="70,22 88,28 68,32" fill="#E65100" opacity="0.6" />
-
-              {/* Forehead & Nose */}
-              <polygon points="50,42 50,75 35,53" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
-              <polygon points="50,42 50,75 65,53" fill={theme === 'china-direct' ? '#B31A05' : '#D99B00'} />
-
-              {/* Cheeks */}
-              <polygon points="35,53 50,75 38,78 24,58" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} />
-              <polygon points="65,53 50,75 62,78 76,58" fill={theme === 'china-direct' ? '#991100' : '#B77900'} />
-
-              {/* Forehead Plates (Removes cherry stem gap) */}
-              <polygon points="50,42 35,53 24,58 30,22" fill="#FFE082" />
-              <polygon points="50,42 65,53 76,58 70,22" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} opacity="0.85" />
-              
-              {/* Muzzle/Nose Base */}
-              <polygon points="50,75 38,78 50,88" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
-              <polygon points="50,75 62,78 50,88" fill={theme === 'china-direct' ? '#B31A05' : '#B77900'} />
-            </svg>
+            <Image 
+              src="/img/taxicolor_logo_flat.webp" 
+              alt="Takin Logo" 
+              width={36} 
+              height={36} 
+              className="w-9 h-9 drop-shadow-[0_0_8px_var(--accent-glow)] transform hover:scale-105 transition-transform duration-300 object-contain" 
+            />
             <div>
               {/* Zero-space brand identity wordmark */}
               <div className="flex items-center leading-none">
@@ -784,33 +764,13 @@ export default function GlobalSourcingHome() {
                   <div className="absolute inset-4 border border-dashed border-white/10 rounded-full animate-[spin_40s_linear_infinite]" />
                   
                   {/* Large Premium Golden SVG Emblem */}
-                  <svg viewBox="0 0 100 100" className="w-44 h-44 drop-shadow-[0_0_20px_var(--accent-glow)] group-hover:scale-105 transition-transform duration-500">
-                    <polygon points="50,3 90,26 90,74 50,97 10,74 10,26" fill="none" stroke={theme === 'china-direct' ? '#DE2910' : '#FFC700'} stroke-width="1.5" stroke-opacity="0.3" />
-                    
-                    <g id="big-emblem">
-                      {/* Left Horn */}
-                      <polygon points="50,42 30,22 12,28 28,42" fill="#FFE57F" />
-                      <polygon points="30,22 12,28 32,32" fill="#E65100" opacity="0.4" />
-
-                      {/* Right Horn */}
-                      <polygon points="50,42 70,22 88,28 72,42" fill="#FFE57F" />
-                      <polygon points="70,22 88,28 68,32" fill="#E65100" opacity="0.6" />
-
-                      {/* Forehead */}
-                      <polygon points="50,42 50,75 35,53" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
-                      <polygon points="50,42 50,75 65,53" fill={theme === 'china-direct' ? '#B31A05' : '#D99B00'} />
-
-                      {/* Cheeks */}
-                      <polygon points="35,53 50,75 38,78 24,58" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} />
-                      <polygon points="65,53 50,75 62,78 76,58" fill={theme === 'china-direct' ? '#991100' : '#B77900'} />
-
-                      <polygon points="50,42 35,53 24,58 30,22" fill="#FFE082" />
-                      <polygon points="50,42 65,53 76,58 70,22" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} opacity="0.85" />
-                      
-                      <polygon points="50,75 38,78 50,88" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
-                      <polygon points="50,75 62,78 50,88" fill={theme === 'china-direct' ? '#B31A05' : '#B77900'} />
-                    </g>
-                  </svg>
+                  <Image 
+                    src="/img/taxicolor_logo_flat.webp" 
+                    alt="Takin Logo" 
+                    width={176} 
+                    height={176} 
+                    className="w-44 h-44 drop-shadow-[0_0_20px_var(--accent-glow)] group-hover:scale-105 transition-transform duration-500 object-contain" 
+                  />
                   
                   <span className="absolute bottom-6 font-mono text-[9px] tracking-widest text-accent uppercase font-bold">{t.storyFooterText}</span>
                 </div>
@@ -1023,12 +983,12 @@ export default function GlobalSourcingHome() {
               <div className="relative bg-panel border border-border rounded-3xl overflow-hidden shadow-2xl p-4 text-center space-y-4">
                 <div className="relative aspect-square w-full rounded-2xl overflow-hidden bg-black/40 border border-border shadow-inner">
                   <Image 
-                    src="/img/tunan_portrait.png" 
+                    src="/img/tunan_portrait.webp" 
                     alt="Tunan Portrait" 
                     fill
                     className="object-cover opacity-85"
                     onError={(e) => {
-                      e.currentTarget.src = "/img/logo_dark_mode.png";
+                      e.currentTarget.src = "/img/logo_dark_mode.webp";
                     }}
                   />
                 </div>
@@ -1370,47 +1330,85 @@ export default function GlobalSourcingHome() {
           </p>
           <div className="pt-4 flex flex-wrap justify-center gap-4">
             <a 
-              href="mailto:driver@taxicolor.com" 
+              href="mailto:tunan@taxicolor.com" 
               className="px-6 py-3.5 rounded-xl bg-accent hover:bg-accent/85 text-button-text font-heading text-xs font-black uppercase tracking-wider transition-all hover:translate-y-[-2px] hover:shadow-[0_0_20px_var(--accent-glow-strong)] block"
             >
-              driver@taxicolor.com
+              tunan@taxicolor.com
             </a>
           </div>
         </div>
       </section>
 
       {/* 9. FOOTER */}
-      <footer className="bg-background text-slate-500 py-12 px-6 border-t border-border">
+      <footer className="bg-background text-slate-500 py-16 px-6 border-t border-border">
+        
+        {/* B2B Ecosystem Partners Grid */}
+        <div className="max-w-7xl mx-auto mb-12 pb-12 border-b border-border grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+          {/* Logistics Partners */}
+          <div className="glass-card rounded-2xl p-6 border border-border bg-panel/30 space-y-4">
+            <span className="text-[10px] font-bold text-accent uppercase tracking-widest block font-mono">
+              {lang === 'en' ? "Logistics Partners" : "货代与物流合伙人"}
+            </span>
+            <div className="flex flex-col justify-center items-center h-20 bg-black/20 rounded-xl border border-dashed border-border p-4 text-center space-y-1">
+              <span className="text-[10px] font-black text-slate-350 tracking-wider font-heading">
+                {lang === 'en' ? "COSCO SHIPPING" : "中远海运"}
+              </span>
+              <span className="text-[9px] text-slate-400 font-bold font-mono">
+                {lang === 'en' ? "Maersk · MSC · CMA CGM" : "马士基 · MSC · 达飞"}
+              </span>
+              <span className="text-[8px] text-slate-500 font-body mt-0.5">
+                {lang === 'en' ? "(Designated per shipment)" : "(按出货批次指定承运人)"}
+              </span>
+            </div>
+          </div>
+
+          {/* QC Partners */}
+          <div className="glass-card rounded-2xl p-6 border border-border bg-panel/30 space-y-4">
+            <span className="text-[10px] font-bold text-accent uppercase tracking-widest block font-mono">
+              {lang === 'en' ? "Quality Control Partners" : "第三方质检合伙人"}
+            </span>
+            <div className="grid grid-cols-2 gap-3 h-20 items-center">
+              {/* SGS */}
+              <a href="https://www.sgs.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-white/5 border border-border rounded-xl p-3 h-full hover:bg-white/[0.08] transition-colors group cursor-pointer">
+                <span className="text-sm font-black text-slate-350 tracking-wider group-hover:text-accent transition-colors font-heading">SGS</span>
+              </a>
+              {/* TÜV SÜD */}
+              <a href="https://www.tuvsud.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-white/5 border border-border rounded-xl p-3 h-full hover:bg-white/[0.08] transition-colors group cursor-pointer">
+                <span className="text-sm font-black text-slate-350 tracking-wider group-hover:text-accent transition-colors font-heading">TÜV SÜD</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Payment Partners */}
+          <div className="glass-card rounded-2xl p-6 border border-border bg-panel/30 space-y-4">
+            <span className="text-[10px] font-bold text-accent uppercase tracking-widest block font-mono">
+              {lang === 'en' ? "Payment & Settlement Partners" : "跨境结算收汇合伙人"}
+            </span>
+            <div className="grid grid-cols-2 gap-3 h-20 items-center">
+              {/* XTransfer */}
+              <a href="https://www.xtransfer.com" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center bg-white/5 border border-border rounded-xl p-2 h-full hover:bg-white/[0.08] transition-colors group cursor-pointer">
+                <span className="text-xs font-black text-slate-350 group-hover:text-accent transition-colors font-heading">XTransfer</span>
+                <span className="text-[8px] text-slate-500 font-mono mt-0.5">{lang === 'en' ? "B2B Trade Pay" : "大宗结算"}</span>
+              </a>
+              {/* Airwallex */}
+              <a href="https://www.airwallex.com" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center bg-white/5 border border-border rounded-xl p-2 h-full hover:bg-white/[0.08] transition-colors group cursor-pointer">
+                <span className="text-xs font-black text-slate-350 group-hover:text-accent transition-colors font-heading">Airwallex</span>
+                <span className="text-[8px] text-slate-500 font-mono mt-0.5">{lang === 'en' ? "Global FX" : "空中云汇"}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             {/* Minimalist SVG Emblem */}
-            <svg viewBox="0 0 100 100" className="w-8 h-8 drop-shadow-[0_0_8px_var(--accent-glow)] transform hover:scale-105 transition-transform duration-300">
-              <polygon points="50,3 90,26 90,74 50,97 10,74 10,26" fill="none" stroke={theme === 'china-direct' ? '#DE2910' : '#FFC700'} strokeWidth="2" strokeOpacity="0.4" />
-              
-              {/* Left Horn */}
-              <polygon points="50,42 30,22 12,28 28,42" fill="#FFE57F" />
-              <polygon points="30,22 12,28 32,32" fill="#E65100" opacity="0.4" />
-
-              {/* Right Horn */}
-              <polygon points="50,42 70,22 88,28 72,42" fill="#FFE57F" />
-              <polygon points="70,22 88,28 68,32" fill="#E65100" opacity="0.6" />
-
-              {/* Forehead & Nose */}
-              <polygon points="50,42 50,75 35,53" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
-              <polygon points="50,42 50,75 65,53" fill={theme === 'china-direct' ? '#B31A05' : '#D99B00'} />
-
-              {/* Cheeks */}
-              <polygon points="35,53 50,75 38,78 24,58" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} />
-              <polygon points="65,53 50,75 62,78 76,58" fill={theme === 'china-direct' ? '#991100' : '#B77900'} />
-
-              {/* Forehead Plates (Removes cherry stem gap) */}
-              <polygon points="50,42 35,53 24,58 30,22" fill="#FFE082" />
-              <polygon points="50,42 65,53 76,58 70,22" fill={theme === 'china-direct' ? '#FF5A43' : '#F5B041'} opacity="0.85" />
-              
-              {/* Muzzle/Nose Base */}
-              <polygon points="50,75 38,78 50,88" fill={theme === 'china-direct' ? '#DE2910' : '#FFC700'} />
-              <polygon points="50,75 62,78 50,88" fill={theme === 'china-direct' ? '#B31A05' : '#B77900'} />
-            </svg>
+            <Image 
+              src="/img/taxicolor_logo_flat.webp" 
+              alt="Takin Logo" 
+              width={32} 
+              height={32} 
+              className="w-8 h-8 drop-shadow-[0_0_8px_var(--accent-glow)] transform hover:scale-105 transition-transform duration-300 object-contain" 
+            />
             <div className="text-left">
               <span className="text-xs font-bold text-foreground tracking-widest block uppercase font-heading">taxicolor</span>
               <span className="text-[8px] font-bold text-accent block uppercase tracking-wider font-mono">{t.footerSlogan}</span>

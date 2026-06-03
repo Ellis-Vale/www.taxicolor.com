@@ -244,14 +244,14 @@ const TRANSLATIONS = {
     storyFooterText: "BUDORCAS TAXICOLOR",
     
     // Transparency
-    transBadge: "极致透明",
-    transTitle: "100% 穿透原厂底价，纯粹代采购。",
-    transDesc: “大多数采购靠邮件往来，我们的工作在工厂车间里完成。我们将一线工厂经验与自研软件工具结合，在中国制造业集群中为你找到、验证、交付优质产品。”,
+    transBadge: "工作方式",
+    transTitle: "一个真正走进车间的采购伙伴。",
+    transDesc: "大多数采购靠邮件往来，我们的工作在工厂车间里完成。我们将一线工厂经验与自研软件工具结合，在中国制造业集群中为你找到、验证、交付优质产品。",
     
     // Engines Showcase
     engineBadge: "TAXICOLOR 数字化交易引擎",
     engineTitle: "自研工具，保证品质稳定。",
-    engineDesc: "我不玩“发邮件加表格”的手工低效外贸。点击下方由我亲自编写的代码模块，看我们如何用自动化的 Python、Next.js 脚本，直接连通制造车间的实地公差数据。",
+    engineDesc: '我们自研的软件工具自动处理全球采购中繁琐的环节——供应商验证、文件生成、合规追踪——让我们能把精力放在真正重要的事情上：工厂车间现场。',
     engineSpec: "引擎技术规格",    
     // 6 Engines
     engines: [

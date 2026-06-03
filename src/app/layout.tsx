@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     title: "Taxicolor — Automotive Filtration & OEM",
     description: "Cabin air filters and custom OEM filtration. Direct factory supply from Shanghai.",
     type: "website",
+    images: [
+      {
+        url: "/img/taxicolor_logo_flat.webp",
+        width: 1024,
+        height: 1024,
+        alt: "Taxicolor",
+      },
+    ],
   },
 };
 

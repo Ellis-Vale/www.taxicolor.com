@@ -30,7 +30,7 @@ import {
 
 const TRANSLATIONS = {
   en: {
-    announcement: "Verified 6,000+ Auto Filter OEM Catalog deployed at filtration.taxicolor.com for direct RFQ routing.",
+    announcement: "600+ OE Cross-Reference Filter Catalog deployed at filtration.taxicolor.com for direct RFQ routing.",
     enterpriseBadge: "Enterprise Live",
     monogramTag: "BUDORCAS B2B",
     navEngines: "Trade Engines",
@@ -44,7 +44,7 @@ const TRANSLATIONS = {
     heroBadge: "Budorcas taxicolor • Factory Direct",
     heroSlogan: "Cabin Air Filters & OEM Filtration.",
     heroHighlight: "Shanghai Factory Direct.",
-    heroDesc: "I write custom code to crawl supplier registrations, run predictive QA models, personally audit industrial specifications in regional workshops, and streamline customs logistics directly through Waigaoqiao FTZ — all for a flat retainer. No hidden markups.",
+    heroDesc: "Custom code scans supplier databases to isolate verified manufacturers. On-site technical audits of production tolerances. Customs streamlined through Shanghai Waigaoqiao FTZ. All for a flat retainer — no hidden markups.",
     btnExplore: "Explore Trade Engines",
     btnCatalogHero: "Automotive OEM Catalog",
     statMapped: "Auto SKU Mapped",
@@ -75,7 +75,7 @@ const TRANSLATIONS = {
     step: "Step",
     
     // Brand Story
-    storyBadge: "OUR BRAND ORIGIN",
+    storyBadge: "BEHIND THE NAME",
     storyTitle: "Taxicolor is not the color of a taxi.",
     storyPara1: "It is the scientific classification of the Takin (Budorcas taxicolor)—a legendary, robust beast that carves its path along the unforgiving, vertical cliffs of the Himalayas at altitudes of 3,000 meters.",
     storyPara2: "Strong, rare, and completely off-the-beaten-path, the Budorcas taxicolor is our spiritual totem. Standard trading corporations rely on simple email markups and crowded wholesale markets. We operate like the Takin: resiliently scaling high-altitude manufacturing barriers, auditing engineering specifications on the factory floor, and securing robust supply lines directly to you.",
@@ -174,7 +174,7 @@ const TRANSLATIONS = {
     
     // Ground Operations
     opsBadge: "YOUR ON-SITE AUDIT LEADER",
-    opsTitle: "An Elite Software Mind in the Molding Workshops.",
+    opsTitle: "A Systems Architect on the Factory Floor.",
     opsPara1: "Standard import intermediaries act purely as brokers, focused entirely on markup percentages while remaining blind to technical specifications. We approach global sourcing differently.",
     opsPara2: "Tunan, a veteran big-tech system architect, personally audits parts manufacturers. We analyze mold structures, inspect raw steel grades, and calibrate robotic assembly lines to guarantee every component batch adheres rigorously to digital blueprint standards.",
     opsTitle1: "Bilingual Engineering Dialogs",
@@ -202,6 +202,21 @@ const TRANSLATIONS = {
     calcRetainedDesc: "Bypassing trading markups directly strengthens your pricing competitiveness in foreign markets.",
     calcSaveText: "Save",
     
+    // Inquiry Form
+    formBadge: "START A CONVERSATION",
+    formTitle: "Tell us about your sourcing needs.",
+    formSubtitle: "No commitment. Just a direct line to an engineer on the ground in China.",
+    formName: "Your Name",
+    formEmail: "Work Email",
+    formCompany: "Company",
+    formCountry: "Target Market",
+    formMessage: "What are you looking to source?",
+    formPlaceholder: "e.g. 500 pcs cabin air filters for VW Golf Mk8, ECE certified, private label packaging...",
+    formSubmit: "Send Inquiry",
+    formSubmitting: "Sending...",
+    formSuccessTitle: "Message Received",
+    formSuccessDesc: "I'll review your inquiry and respond within 24 hours. Talk soon — Tunan",
+
     // CTA Callout
     ctaBadge: "Direct-to-Source Supply Chains",
     ctaTitle: "Stop Overpaying Intermediaries. Secure Your Direct Industrial Supply Line.",
@@ -212,7 +227,7 @@ const TRANSLATIONS = {
     footerCopy: "© 2026 TAXICOLOR. ALL RIGHTS RESERVED. PUDONG WAIGAOQIAO FREE TRADE ZONE, SHANGHAI."
   },
   zh: {
-    announcement: "已在 filtration.taxicolor.com 部署 6,000+ 汽车滤清器规格规格库，支持直连工厂询价。",
+    announcement: "已在 filtration.taxicolor.com 部署 600+ 汽车滤清器 OE 交叉规格库，支持直连工厂询价。",
     enterpriseBadge: "企业级上线",
     monogramTag: "Taxicolor B2B Trade",
     navEngines: "交易引擎",
@@ -226,7 +241,7 @@ const TRANSLATIONS = {
     heroBadge: "Budorcas taxicolor • 直连工厂",
     heroSlogan: "高海拔采购精准度，",
     heroHighlight: "重塑供应链毛利结构。",
-    heroDesc: "我用自研代码算法筛选一级工厂，亲自睡进车间现场审计机械公差，并在上海外高桥自贸区调配货柜清关。一切仅收透明、固定的服务费，彻底剥离中间商的灰色返点加价。",
+    heroDesc: "自研代码扫描企业注册底册，直筛一级工厂。亲赴车间实地审计机械公差。上海外高桥自贸区一站式清关。仅收透明固定服务费，零中间商返点。",
     btnExplore: "探索采购引擎",
     btnCatalogHero: "汽车零件规格库",
     statMapped: "已映射零件规格",
@@ -384,6 +399,21 @@ const TRANSLATIONS = {
     calcRetainedDesc: "完全过滤掉贸易商的加价成本，你的出海产品在海外市场将拥有无懈可击的价格竞争力。",
     calcSaveText: "每年省下",
     
+    // Inquiry Form
+    formBadge: "开启对话",
+    formTitle: "告诉我们您的采购需求。",
+    formSubtitle: "无需承诺。只是一条直通中国工厂现场工程师的直线。",
+    formName: "您的名字",
+    formEmail: "工作邮箱",
+    formCompany: "公司名称",
+    formCountry: "目标市场",
+    formMessage: "您想采购什么产品？",
+    formPlaceholder: "例如：500 个大众高尔夫 Mk8 空调滤芯，需 ECE 认证，定制彩盒包装...",
+    formSubmit: "发送询价",
+    formSubmitting: "发送中...",
+    formSuccessTitle: "已收到您的消息",
+    formSuccessDesc: "我会在 24 小时内查看并回复。回头聊 — 图南",
+
     // CTA Callout
     ctaBadge: "直连源头厂 掌控供应链",
     ctaTitle: "告别层层代理剥削。拥有自主受控的工业供应链。",
@@ -426,9 +456,28 @@ export default function GlobalSourcingHome() {
   const [mounted, setMounted] = useState(false);
   const [activeEngineTab, setActiveEngineTab] = useState(0);
   const [activeHeroTab, setActiveHeroTab] = useState(0);
-  const [skuCount, setSkuCount] = useState(1500);
-  const [billingCycle, setBillingCycle] = useState<'monthly' | 'annual'>('monthly');
-  
+
+  // Inquiry form states
+  const [formName, setFormName] = useState('');
+  const [formEmail, setFormEmail] = useState('');
+  const [formCompany, setFormCompany] = useState('');
+  const [formCountry, setFormCountry] = useState('');
+  const [formMessage, setFormMessage] = useState('');
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formSubmitting, setFormSubmitting] = useState(false);
+
+  const handleInquirySubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formName || !formEmail) return;
+    setFormSubmitting(true);
+    setTimeout(() => {
+      console.log("B2B Inquiry:", { name: formName, email: formEmail, company: formCompany, country: formCountry, message: formMessage });
+      setFormSubmitting(false);
+      setFormSubmitted(true);
+      setFormName(''); setFormEmail(''); setFormCompany(''); setFormCountry(''); setFormMessage('');
+    }, 1000);
+  };
+
   // Custom theme and language states
   const [theme, setTheme] = useState<'dark' | 'light' | 'china-direct'>('dark');
   const [lang, setLang] = useState<'en' | 'zh'>('en');
@@ -454,13 +503,6 @@ export default function GlobalSourcingHome() {
 
   // Active translation selector
   const t = TRANSLATIONS[lang];
-
-  // Sourcing cost comparison parameters
-  const traditionalAgencyFee = Math.round(skuCount * 45); 
-  const taxicolorFlatFee = billingCycle === 'monthly' 
-    ? 299 * 12 + Math.round(skuCount * 5)
-    : Math.round((249 * 12 + skuCount * 4.5));
-  const moneySaved = traditionalAgencyFee - taxicolorFlatFee;
 
   const heroShowcaseSlides = [
     {
@@ -624,7 +666,7 @@ export default function GlobalSourcingHome() {
             {/* Credibility Badges */}
             <div className="grid grid-cols-3 gap-6 pt-10 border-t border-border max-w-lg">
               <div>
-                <span className="text-2xl font-black text-foreground block">6,000+</span>
+                <span className="text-2xl font-black text-foreground block">600+</span>
                 <span className="text-[9px] text-accent font-extrabold uppercase tracking-wider block mt-0.5 font-mono">{t.statMapped}</span>
               </div>
               <div>
@@ -1208,108 +1250,100 @@ export default function GlobalSourcingHome() {
         </div>
       </section>
 
-      {/* 8. DYNAMIC SKU ELASTIC COST CALCULATOR */}
+      {/* 8. DYNAMIC SKU ELASTIC COST CALCULATOR — COMMENTED OUT; replaced with inquiry form */}
+      {/*
       <section id="calculator" className="py-24 bg-background border-t border-border">
-        <div className="max-w-4xl mx-auto px-6 text-center space-y-12">
-          
+        ... CALCULATOR CODE PRESERVED IN GIT HISTORY ...
+      </section>
+      */}
+
+      {/* 8. B2B INQUIRY FORM */}
+      <section id="calculator" className="py-24 bg-background border-t border-border">
+        <div className="max-w-3xl mx-auto px-6 text-center space-y-10">
+
           <div className="space-y-3">
             <span className="font-heading text-[10px] font-bold text-accent tracking-widest uppercase bg-accent/10 px-3 py-1 rounded-full border border-accent/25 inline-block font-mono">
-              {t.calcBadge}
+              {t.formBadge}
             </span>
             <h2 className="font-heading text-3xl font-black text-foreground leading-tight">
-              {t.calcTitle}
+              {t.formTitle}
             </h2>
             <p className="text-xs text-slate-450 font-body max-w-lg mx-auto">
-              {t.calcDesc}
+              {t.formSubtitle}
             </p>
           </div>
 
-          {/* Calculator Card */}
-          <div className="glass-card rounded-3xl p-8 sm:p-10 border border-border shadow-xl space-y-8 text-left">
-            <div className="space-y-4">
-              <div className="flex justify-between items-center">
-                <label htmlFor="sku-slider" className="text-xs font-bold text-foreground uppercase tracking-wide font-heading font-mono">{t.calcSkuLabel}</label>
-                <span className="text-lg font-black text-accent font-heading">{skuCount.toLocaleString()} {t.calcSkuCount}</span>
+          {formSubmitted ? (
+            /* Success State */
+            <div className="glass-card rounded-3xl p-12 text-center border border-emerald-500/25 max-w-2xl mx-auto shadow-2xl">
+              <div className="w-16 h-16 rounded-full bg-emerald-500/10 border-2 border-emerald-500/40 flex items-center justify-center mx-auto mb-6">
+                <CheckCircle2 className="w-8 h-8 text-emerald-400" />
               </div>
-              <input
-                id="sku-slider"
-                type="range"
-                min="100"
-                max="5000"
-                step="50"
-                value={skuCount}
-                onChange={(e) => setSkuCount(Number(e.target.value))}
-                className="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer accent-accent"
-              />
-              <div className="flex justify-between text-[10px] font-mono text-slate-500">
-                <span>100 {t.calcSkuCount}</span>
-                <span>2,500 {t.calcSkuCount}</span>
-                <span>5,000 {t.calcSkuCount}</span>
-              </div>
+              <h3 className="font-heading text-xl font-black text-foreground mb-3">{t.formSuccessTitle}</h3>
+              <p className="text-sm text-slate-400 leading-relaxed font-body">{t.formSuccessDesc}</p>
             </div>
-
-            {/* Billing Cycle Toggle */}
-            <div className="flex justify-center">
-              <div className="bg-white/[0.02] p-1 rounded-xl flex gap-1 border border-border">
-                <button
-                  onClick={() => setBillingCycle('monthly')}
-                  className={`px-4 py-2 rounded-lg text-[10px] font-extrabold uppercase tracking-wider font-heading cursor-pointer transition-all ${
-                    billingCycle === 'monthly' ? 'bg-accent text-button-text shadow-sm' : 'text-slate-400 hover:text-foreground'
-                  }`}
-                >
-                  {t.calcMonthlyToggle}
-                </button>
-                <button
-                  onClick={() => setBillingCycle('annual')}
-                  className={`px-4 py-2 rounded-lg text-[10px] font-extrabold uppercase tracking-wider font-heading cursor-pointer transition-all ${
-                    billingCycle === 'annual' ? 'bg-accent text-button-text shadow-sm' : 'text-slate-400 hover:text-foreground'
-                  }`}
-                >
-                  {t.calcAnnualToggle}
-                </button>
-              </div>
-            </div>
-
-            {/* Calculations Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-border">
-              
-              <div className="space-y-2">
-                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block font-heading font-mono">{t.calcTradAgent}</span>
-                <div className="space-y-1">
-                  <div className="text-3xl font-black text-foreground font-heading">
-                    ${traditionalAgencyFee.toLocaleString()} <span className="text-xs text-slate-500 font-bold font-body">{t.calcYearEst}</span>
+          ) : (
+            /* Form */
+            <div className="glass-card rounded-3xl p-8 sm:p-10 border border-border shadow-xl text-left">
+              <form onSubmit={handleInquirySubmit} className="space-y-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div className="space-y-1.5">
+                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider font-mono">{t.formName} *</label>
+                    <input
+                      type="text" required value={formName} onChange={(e) => setFormName(e.target.value)}
+                      placeholder="Ellis Vale"
+                      className="w-full bg-white/[0.03] border border-border rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-slate-600 outline-none focus:border-accent/50 transition-colors"
+                    />
                   </div>
-                  <span className="text-[10px] leading-relaxed font-body text-slate-450 block">{t.calcTradDesc}</span>
-                </div>
-              </div>
-
-              <div className="space-y-2 bg-white/[0.02] p-6 rounded-2xl border border-border shadow-md">
-                <span className="text-[10px] font-bold text-accent uppercase tracking-widest block font-heading font-mono">{t.calcFlatFee}</span>
-                <div className="space-y-1">
-                  <div className="text-3xl font-black text-foreground font-heading">
-                    ${taxicolorFlatFee.toLocaleString()} <span className="text-xs text-slate-500 font-bold font-body">{t.calcYearEst}</span>
+                  <div className="space-y-1.5">
+                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider font-mono">{t.formEmail} *</label>
+                    <input
+                      type="email" required value={formEmail} onChange={(e) => setFormEmail(e.target.value)}
+                      placeholder="purchasing@yourbrand.com"
+                      className="w-full bg-white/[0.03] border border-border rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-slate-600 outline-none focus:border-accent/50 transition-colors"
+                    />
                   </div>
-                  <span className="text-[10px] leading-relaxed font-body text-slate-400 block">{t.calcFlatDesc}</span>
                 </div>
-              </div>
 
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div className="space-y-1.5">
+                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider font-mono">{t.formCompany}</label>
+                    <input
+                      type="text" value={formCompany} onChange={(e) => setFormCompany(e.target.value)}
+                      placeholder="Global Parts Inc."
+                      className="w-full bg-white/[0.03] border border-border rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-slate-600 outline-none focus:border-accent/50 transition-colors"
+                    />
+                  </div>
+                  <div className="space-y-1.5">
+                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider font-mono">{t.formCountry}</label>
+                    <input
+                      type="text" value={formCountry} onChange={(e) => setFormCountry(e.target.value)}
+                      placeholder="Germany / United States / UAE..."
+                      className="w-full bg-white/[0.03] border border-border rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-slate-600 outline-none focus:border-accent/50 transition-colors"
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-1.5">
+                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider font-mono">{t.formMessage}</label>
+                  <textarea
+                    rows={4} value={formMessage} onChange={(e) => setFormMessage(e.target.value)}
+                    placeholder={t.formPlaceholder}
+                    className="w-full bg-white/[0.03] border border-border rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-slate-600 outline-none focus:border-accent/50 transition-colors resize-none"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={formSubmitting}
+                  className="w-full py-3.5 rounded-xl bg-accent hover:bg-accent/90 disabled:bg-accent/60 text-button-text font-heading text-xs font-black uppercase tracking-widest flex items-center justify-center gap-2 transition-all hover:translate-y-[-1px] shadow-lg shadow-accent/15 cursor-pointer"
+                >
+                  <Send className="w-4 h-4" />
+                  <span>{formSubmitting ? t.formSubmitting : t.formSubmit}</span>
+                </button>
+              </form>
             </div>
-
-            {/* Savings Callout */}
-            <div className="bg-emerald-950/20 border border-emerald-800/30 p-5 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="flex items-center gap-3 text-left">
-                <div className="p-2.5 bg-emerald-500 rounded-xl text-[#080C14] font-black">
-                  <Scale className="w-5 h-5" />
-                </div>
-                <div>
-                  <span className="text-xs font-bold text-white block font-heading">{t.calcRetained}</span>
-                  <span className="text-[10px] text-slate-400 font-body">{t.calcRetainedDesc}</span>
-                </div>
-              </div>
-              <span className="text-xl font-black text-emerald-400 font-heading shrink-0">{t.calcSaveText} ${moneySaved.toLocaleString()} / Year</span>
-            </div>
-
-          </div>
+          )}
 
         </div>
       </section>
@@ -1414,9 +1448,15 @@ export default function GlobalSourcingHome() {
               <span className="text-[8px] font-bold text-accent block uppercase tracking-wider font-mono">{t.footerSlogan}</span>
             </div>
           </div>
-          <p className="text-[10px] font-mono tracking-widest uppercase text-slate-600">
-            {t.footerCopy}
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <p className="text-[10px] font-mono tracking-widest uppercase text-slate-600">
+              {t.footerCopy}
+            </p>
+            <span className="text-slate-700 hidden sm:inline">|</span>
+            <a href="mailto:tunan@taxicolor.com" className="text-[10px] font-mono tracking-widest uppercase text-slate-600 hover:text-accent transition-colors">
+              {lang === 'en' ? 'Privacy & Data Policy' : '隐私与数据政策'}
+            </a>
+          </div>
         </div>
       </footer>
 

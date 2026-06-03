@@ -48,8 +48,8 @@ const TRANSLATIONS = {
     btnExplore: "How We Work",
     btnCatalogHero: "Filter Catalog",
     statMapped: "OE SKUs Tracked",
-    statMarkup: "Factory Audits",
-    statSync: "Edge CDN Sync",
+    statMarkup: "Factory-Verified",
+    statSync: "Response",
     
     // Address bar simulation
     addressBar: "www.taxicolor.com/showroom",
@@ -208,8 +208,8 @@ const TRANSLATIONS = {
     btnExplore: "我们的工作方式",
     btnCatalogHero: "滤清器规格库",
     statMapped: "跟踪 OE 型号",
-    statMarkup: "工厂实地审计",
-    statSync: "全球边缘加速",
+    statMarkup: "工厂实地验证",
+    statSync: "小时响应",
     
     // Address bar simulation
     addressBar: "www.taxicolor.com/showroom",
@@ -593,11 +593,11 @@ export default function GlobalSourcingHome() {
                 <span className="text-[9px] text-accent font-extrabold uppercase tracking-wider block mt-0.5 font-mono">{t.statMapped}</span>
               </div>
               <div>
-                <span className="text-2xl font-black text-foreground block">0%</span>
+                <span className="text-2xl font-black text-foreground block">100%</span>
                 <span className="text-[9px] text-accent font-extrabold uppercase tracking-wider block mt-0.5 font-mono">{t.statMarkup}</span>
               </div>
               <div>
-                <span className="text-2xl font-black text-foreground block">&lt;18ms</span>
+                <span className="text-2xl font-black text-foreground block">24h</span>
                 <span className="text-[9px] text-accent font-extrabold uppercase tracking-wider block mt-0.5 font-mono">{t.statSync}</span>
               </div>
             </div>

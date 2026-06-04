@@ -588,24 +588,20 @@ export default function GlobalSourcingHome() {
               </a>
             </div>
 
-            {/* Credibility Badges */}
-            <div className="grid grid-cols-4 gap-6 pt-10 border-t border-border max-w-xl">
-              <div>
-                <span className="text-2xl font-black text-foreground block">70+</span>
-                <span className="text-[9px] text-accent font-extrabold uppercase tracking-wider block mt-0.5 font-mono">{t.statMapped}</span>
-              </div>
-              <div>
-                <span className="text-2xl font-black text-foreground block">&lt;50km</span>
-                <span className="text-[9px] text-accent font-extrabold uppercase tracking-wider block mt-0.5 font-mono">{t.statPort}</span>
-              </div>
-              <div>
-                <span className="text-2xl font-black text-foreground block">100%</span>
-                <span className="text-[9px] text-accent font-extrabold uppercase tracking-wider block mt-0.5 font-mono">{t.statMarkup}</span>
-              </div>
-              <div>
-                <span className="text-2xl font-black text-foreground block">24h</span>
-                <span className="text-[9px] text-accent font-extrabold uppercase tracking-wider block mt-0.5 font-mono">{t.statSync}</span>
-              </div>
+            {/* Trust Bar */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 pt-10 border-t border-border max-w-2xl">
+              {[
+                { label: lang === 'en' ? '70+ OE Models' : '70+ OE 型号', desc: lang === 'en' ? 'Verified OEM catalog' : '已验证 OEM 目录' },
+                { label: lang === 'en' ? 'IATF / ISO 9001' : 'IATF / ISO 9001', desc: lang === 'en' ? 'Automotive OEM certified' : '汽车 OEM 认证' },
+                { label: lang === 'en' ? 'Shanghai FTZ' : '上海外高桥', desc: lang === 'en' ? 'Container pack Waigaoqiao' : '外高桥拼箱直装' },
+                { label: lang === 'en' ? '100% Batch QC' : '100% 批次全检', desc: lang === 'en' ? 'Dimensional & seal per order' : '每单尺寸与密封抽检' },
+                { label: lang === 'en' ? '12h Response' : '12h 响应', desc: lang === 'en' ? 'Direct to engineer' : '直连工厂工程师' },
+              ].map((item, idx) => (
+                <div key={idx} className="glass-card rounded-xl p-3 border border-border text-center space-y-0.5">
+                  <span className="text-[10px] font-extrabold text-foreground uppercase tracking-wider block font-heading">{item.label}</span>
+                  <span className="text-[8px] text-slate-450 block font-mono">{item.desc}</span>
+                </div>
+              ))}
             </div>
           </div>
 

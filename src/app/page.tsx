@@ -588,10 +588,9 @@ export default function GlobalSourcingHome() {
               </a>
             </div>
 
-            {/* Trust Bar — aligns with right edge of hero mockup */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-end">
-              <div className="lg:col-span-7" />
-              <div className="lg:col-span-5 grid grid-cols-2 sm:grid-cols-3 gap-2 pt-6 border-t border-border">
+            {/* Trust Bar — full width */}
+            <div className="pt-10 border-t border-border">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                 {[
                   { label: lang === 'en' ? '70+ OE Models' : '70+ OE 型号', desc: lang === 'en' ? 'Verified OEM catalog' : '已验证 OEM 目录' },
                   { label: lang === 'en' ? '8 Global Certs' : '8 项全球认证', desc: 'ISO 9001 · 13485 · BSCI · CE · GS · UL · SAA · PSE' },
@@ -604,7 +603,6 @@ export default function GlobalSourcingHome() {
                     <span className="text-[8px] text-slate-450 block font-mono">{item.desc}</span>
                   </div>
                 ))}
-              </div>
             </div>
           </div>
 
@@ -719,7 +717,7 @@ export default function GlobalSourcingHome() {
             ].map((item, idx) => (
               <div key={idx} className="glass-card rounded-2xl p-5 border border-border text-left space-y-3 hover:border-accent/30 transition-all group">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-white/[0.08] flex items-center justify-center p-2">
+                  <div className="w-12 h-12 rounded-xl bg-white/20 dark:bg-white/15 flex items-center justify-center p-2">
                     <img src={item.img} alt={item.cert} className="w-full h-full object-contain" loading="lazy" />
                   </div>
                   <span className="text-[9px] font-extrabold text-accent uppercase tracking-widest bg-accent/10 px-2 py-0.5 rounded font-mono">{item.market}</span>

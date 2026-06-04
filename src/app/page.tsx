@@ -718,7 +718,7 @@ export default function GlobalSourcingHome() {
             ].map((item, idx) => (
               <div key={idx} className="glass-card rounded-2xl p-5 border border-border text-left space-y-3 hover:border-accent/30 transition-all group">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-white/20 dark:bg-white/15 flex items-center justify-center p-2">
+                  <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center p-2 ring-1 ring-slate-200">
                     <img src={item.img} alt={item.cert} className="w-full h-full object-contain" loading="lazy" />
                   </div>
                   <span className="text-[9px] font-extrabold text-accent uppercase tracking-widest bg-accent/10 px-2 py-0.5 rounded font-mono">{item.market}</span>

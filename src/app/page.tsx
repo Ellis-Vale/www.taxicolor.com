@@ -48,6 +48,7 @@ const TRANSLATIONS = {
     btnExplore: "How We Work",
     btnCatalogHero: "Filter Catalog",
     statMapped: "OE Cross-Refs",
+    statPort: "Shanghai Port",
     statMarkup: "Factory-Verified",
     statSync: "Response",
     
@@ -208,6 +209,7 @@ const TRANSLATIONS = {
     btnExplore: "我们的工作方式",
     btnCatalogHero: "滤清器规格库",
     statMapped: "跟踪 OE 型号",
+    statPort: "上海外高桥港",
     statMarkup: "工厂实地验证",
     statSync: "小时响应",
     
@@ -587,10 +589,14 @@ export default function GlobalSourcingHome() {
             </div>
 
             {/* Credibility Badges */}
-            <div className="grid grid-cols-3 gap-6 pt-10 border-t border-border max-w-lg">
+            <div className="grid grid-cols-4 gap-6 pt-10 border-t border-border max-w-xl">
               <div>
                 <span className="text-2xl font-black text-foreground block">70+</span>
                 <span className="text-[9px] text-accent font-extrabold uppercase tracking-wider block mt-0.5 font-mono">{t.statMapped}</span>
+              </div>
+              <div>
+                <span className="text-2xl font-black text-foreground block">&lt;50km</span>
+                <span className="text-[9px] text-accent font-extrabold uppercase tracking-wider block mt-0.5 font-mono">{t.statPort}</span>
               </div>
               <div>
                 <span className="text-2xl font-black text-foreground block">100%</span>

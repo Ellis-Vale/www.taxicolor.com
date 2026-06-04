@@ -30,7 +30,7 @@ import {
 
 const TRANSLATIONS = {
   en: {
-    announcement: "600+ OE Cross-Reference Filter Catalog deployed at filtration.taxicolor.com for direct RFQ routing.",
+    announcement: "70+ OE Cross-Reference Filter Catalog deployed at filtration.taxicolor.com for direct RFQ routing.",
     enterpriseBadge: "Enterprise Live",
     monogramTag: "BUDORCAS B2B",
     navEngines: "Capabilities",
@@ -47,7 +47,7 @@ const TRANSLATIONS = {
     heroDesc: "Custom code scans supplier databases to isolate verified manufacturers. On-site technical audits of production tolerances. Customs streamlined through Shanghai Waigaoqiao FTZ. A tech-native procurement partner on the ground in China.",
     btnExplore: "How We Work",
     btnCatalogHero: "Filter Catalog",
-    statMapped: "OE SKUs Tracked",
+    statMapped: "OE Cross-Refs",
     statMarkup: "Factory-Verified",
     statSync: "Response",
     
@@ -190,7 +190,7 @@ const TRANSLATIONS = {
     footerCopy: "© 2026 TAXICOLOR. ALL RIGHTS RESERVED. PUDONG WAIGAOQIAO FREE TRADE ZONE, SHANGHAI."
   },
   zh: {
-    announcement: "已在 filtration.taxicolor.com 部署 600+ 汽车滤清器 OE 交叉规格库，支持直连工厂询价。",
+    announcement: "已在 filtration.taxicolor.com 部署 70+ 汽车滤清器 OE 交叉规格库，支持直连工厂询价。",
     enterpriseBadge: "企业级上线",
     monogramTag: "Taxicolor B2B Trade",
     navEngines: "交易引擎",
@@ -589,7 +589,7 @@ export default function GlobalSourcingHome() {
             {/* Credibility Badges */}
             <div className="grid grid-cols-3 gap-6 pt-10 border-t border-border max-w-lg">
               <div>
-                <span className="text-2xl font-black text-foreground block">600+</span>
+                <span className="text-2xl font-black text-foreground block">70+</span>
                 <span className="text-[9px] text-accent font-extrabold uppercase tracking-wider block mt-0.5 font-mono">{t.statMapped}</span>
               </div>
               <div>

@@ -708,18 +708,20 @@ export default function GlobalSourcingHome() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              { cert: 'ISO 9001', icon: '🏭', market: 'Global', descEn: 'Quality management — baseline for all export markets', descZh: '质量管理体系——所有出口市场通用基础' },
-              { cert: 'ISO 13485', icon: '🏥', market: 'Medical', descEn: 'Medical device quality — enables medical-grade filtration', descZh: '医疗器械质量管理——可生产医用级过滤产品' },
-              { cert: 'BSCI', icon: '🤝', market: 'EU', descEn: 'Social responsibility audit — required by European retailers', descZh: '社会责任验厂——欧洲零售连锁采购准入' },
-              { cert: 'CE', icon: '🇪🇺', market: 'EU / EEA', descEn: 'European conformity — mandatory for EU market entry', descZh: '欧洲合规——进入欧盟市场强制要求' },
-              { cert: 'GS', icon: '🇩🇪', market: 'Germany', descEn: 'German safety — most trusted mark in DACH region', descZh: '德国安全认证——德奥瑞市场最信任的安全标志' },
-              { cert: 'UL', icon: '🇺🇸', market: 'N. America', descEn: 'US safety standard — recognized by American retailers', descZh: '美国安全标准——北美零售商和保险公司认可' },
-              { cert: 'SAA', icon: '🇦🇺', market: 'Australia', descEn: 'Australian safety — required for ANZ market entry', descZh: '澳洲安全认证——澳新市场准入要求' },
-              { cert: 'PSE', icon: '🇯🇵', market: 'Japan', descEn: 'Japanese safety — mandatory for Japan market', descZh: '日本电气安全——进入日本市场强制认证' },
+              { cert: 'ISO 9001', img: '/img/certs/iso-9001.png', market: 'Global', descEn: 'Quality management — baseline for all export markets', descZh: '质量管理体系——所有出口市场通用基础' },
+              { cert: 'ISO 13485', img: '/img/certs/iso-13485.png', market: 'Medical', descEn: 'Medical device quality — enables medical-grade filtration', descZh: '医疗器械质量管理——可生产医用级过滤产品' },
+              { cert: 'BSCI', img: '/img/certs/bsci.png', market: 'EU', descEn: 'Social responsibility audit — required by European retailers', descZh: '社会责任验厂——欧洲零售连锁采购准入' },
+              { cert: 'CE', img: '/img/certs/ce.png', market: 'EU / EEA', descEn: 'European conformity — mandatory for EU market entry', descZh: '欧洲合规——进入欧盟市场强制要求' },
+              { cert: 'GS', img: '/img/certs/gs.png', market: 'Germany', descEn: 'German safety — most trusted mark in DACH region', descZh: '德国安全认证——德奥瑞市场最信任的安全标志' },
+              { cert: 'UL', img: '/img/certs/ul.png', market: 'N. America', descEn: 'US safety standard — recognized by American retailers', descZh: '美国安全标准——北美零售商和保险公司认可' },
+              { cert: 'SAA', img: '/img/certs/saa.png', market: 'Australia', descEn: 'Australian safety — required for ANZ market entry', descZh: '澳洲安全认证——澳新市场准入要求' },
+              { cert: 'PSE', img: '/img/certs/pse.png', market: 'Japan', descEn: 'Japanese safety — mandatory for Japan market', descZh: '日本电气安全——进入日本市场强制认证' },
             ].map((item, idx) => (
               <div key={idx} className="glass-card rounded-2xl p-5 border border-border text-left space-y-3 hover:border-accent/30 transition-all group">
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl">{item.icon}</span>
+                  <div className="w-12 h-12 rounded-xl bg-white/[0.08] flex items-center justify-center p-2">
+                    <img src={item.img} alt={item.cert} className="w-full h-full object-contain" loading="lazy" />
+                  </div>
                   <span className="text-[9px] font-extrabold text-accent uppercase tracking-widest bg-accent/10 px-2 py-0.5 rounded font-mono">{item.market}</span>
                 </div>
                 <div>

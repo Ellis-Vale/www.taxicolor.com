@@ -594,7 +594,7 @@ export default function GlobalSourcingHome() {
               <div className="lg:col-span-5 grid grid-cols-2 sm:grid-cols-3 gap-2 pt-6 border-t border-border">
                 {[
                   { label: lang === 'en' ? '70+ OE Models' : '70+ OE 型号', desc: lang === 'en' ? 'Verified OEM catalog' : '已验证 OEM 目录' },
-                  { label: lang === 'en' ? 'IATF / ISO 9001' : 'IATF / ISO 9001', desc: lang === 'en' ? 'Automotive OEM certified' : '汽车 OEM 认证' },
+                  { label: lang === 'en' ? '8 Global Certs' : '8 项全球认证', desc: 'ISO 9001 · 13485 · BSCI · CE · GS · UL · SAA · PSE' },
                   { label: lang === 'en' ? 'Shanghai FTZ' : '上海外高桥', desc: lang === 'en' ? 'Container pack Waigaoqiao' : '外高桥拼箱直装' },
                   { label: lang === 'en' ? '100% Batch QC' : '100% 批次全检', desc: lang === 'en' ? 'Dimensional & seal per order' : '每单尺寸与密封抽检' },
                   { label: lang === 'en' ? '12h Response' : '12h 响应', desc: lang === 'en' ? 'Direct to engineer' : '直连工厂工程师' },

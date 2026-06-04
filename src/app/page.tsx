@@ -605,6 +605,7 @@ export default function GlobalSourcingHome() {
                 ))}
             </div>
           </div>
+          </div>
 
           {/* Right Interactive Mockup Slider */}
           <div className="lg:col-span-5 relative group flex justify-center w-full">

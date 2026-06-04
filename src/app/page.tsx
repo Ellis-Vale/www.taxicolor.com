@@ -669,30 +669,29 @@ export default function GlobalSourcingHome() {
           </div>
 
         </div>
+      </section>
 
-        {/* Trust Bar — aligned with right edge of hero mockup */}
-        <div className="max-w-7xl mx-auto px-6 w-full pt-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-end">
-            <div className="hidden lg:block lg:col-span-7" />
-            <div className="lg:col-span-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 pt-6 border-t border-border">
-              {[
-                { icon: <Database className="w-3.5 h-3.5 text-accent" />, title: lang === 'en' ? '70+ OE Models' : '70+ OE 型号', desc: lang === 'en' ? 'Verified catalog' : '已验证目录' },
-                { icon: <ShieldCheck className="w-3.5 h-3.5 text-accent" />, title: lang === 'en' ? '8 Global Certs' : '8 项全球认证', desc: 'ISO 9001 · 13485 · BSCI · CE · GS · UL · SAA · PSE' },
-                { icon: <Anchor className="w-3.5 h-3.5 text-accent" />, title: lang === 'en' ? 'Shanghai FTZ' : '上海外高桥', desc: lang === 'en' ? 'Container Waigaoqiao' : '外高桥拼箱' },
-                { icon: <CheckCircle2 className="w-3.5 h-3.5 text-accent" />, title: lang === 'en' ? '100% Batch QC' : '100% 批次全检', desc: lang === 'en' ? 'Dimensional & seal' : '尺寸与密封抽检' },
-                { icon: <Send className="w-3.5 h-3.5 text-accent" />, title: lang === 'en' ? '12h Response' : '12h 响应', desc: lang === 'en' ? 'Direct to engineer' : '直连工程师' },
-              ].map((item, idx) => (
-                <div key={idx} className="flex items-center gap-2 group">
-                  <div className="p-1.5 bg-white/[0.05] rounded-lg border border-border flex-shrink-0 group-hover:border-accent/30 transition-colors">
-                    {item.icon}
-                  </div>
-                  <div className="min-w-0">
-                    <span className="text-[8px] font-extrabold text-foreground uppercase tracking-wider block font-heading truncate">{item.title}</span>
-                    <span className="text-[7px] text-slate-450 block font-mono mt-0.5 truncate">{item.desc}</span>
-                  </div>
+      {/* Trust Bar — below hero, full width, 5-column layout */}
+      <section className="py-8 bg-background border-b border-border">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {[
+              { icon: <Database className="w-4 h-4 text-accent" />, title: lang === 'en' ? '70+ OE Models' : '70+ OE 型号', desc: lang === 'en' ? 'Verified OEM catalog' : '已验证 OEM 目录' },
+              { icon: <ShieldCheck className="w-4 h-4 text-accent" />, title: lang === 'en' ? '8 Global Certs' : '8 项全球认证', desc: 'ISO 9001 · 13485 · BSCI · CE · GS · UL · SAA · PSE' },
+              { icon: <Anchor className="w-4 h-4 text-accent" />, title: lang === 'en' ? 'Shanghai FTZ' : '上海外高桥', desc: lang === 'en' ? 'Container pack Waigaoqiao' : '外高桥拼箱直装' },
+              { icon: <CheckCircle2 className="w-4 h-4 text-accent" />, title: lang === 'en' ? '100% Batch QC' : '100% 批次全检', desc: lang === 'en' ? 'Dimensional & seal per order' : '每单尺寸与密封抽检' },
+              { icon: <Send className="w-4 h-4 text-accent" />, title: lang === 'en' ? '12h Response' : '12h 响应', desc: lang === 'en' ? 'Direct to engineer' : '直连工厂工程师' },
+            ].map((item, idx) => (
+              <div key={idx} className="flex items-center gap-3 p-2 group">
+                <div className="p-2.5 bg-white/[0.05] rounded-xl border border-border flex-shrink-0 group-hover:border-accent/30 transition-colors">
+                  {item.icon}
                 </div>
-              ))}
-            </div>
+                <div>
+                  <span className="text-[9px] font-extrabold text-foreground uppercase tracking-wider block font-heading">{item.title}</span>
+                  <span className="text-[8px] text-slate-450 block font-mono mt-0.5">{item.desc}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

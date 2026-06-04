@@ -689,6 +689,49 @@ export default function GlobalSourcingHome() {
         </div>
       </section>
 
+      {/* 3.5 GLOBAL CERTIFICATIONS */}
+      <section className="py-24 bg-background border-b border-border">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto space-y-3 mb-14">
+            <span className="font-heading text-[10px] font-bold text-accent tracking-widest uppercase bg-accent/10 px-3 py-1 rounded-full border border-accent/25 font-mono">
+              {lang === 'en' ? 'GLOBAL CERTIFICATIONS' : '全球认证'}
+            </span>
+            <h2 className="font-heading text-3xl sm:text-4xl font-black text-foreground leading-tight">
+              {lang === 'en' ? 'Factory-Certified for Every Market' : '工厂认证覆盖全球市场'}
+            </h2>
+            <p className="text-sm text-slate-450 font-body max-w-lg mx-auto">
+              {lang === 'en'
+                ? 'Our Shanghai facility holds 8 international certifications. Wherever your customers are, we have the paperwork ready.'
+                : '上海工厂持有 8 项国际认证。无论你的客户在哪个市场，认证文件随时备查。'}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              { cert: 'ISO 9001', icon: '🏭', market: 'Global', descEn: 'Quality management — baseline for all export markets', descZh: '质量管理体系——所有出口市场通用基础' },
+              { cert: 'ISO 13485', icon: '🏥', market: 'Medical', descEn: 'Medical device quality — enables medical-grade filtration', descZh: '医疗器械质量管理——可生产医用级过滤产品' },
+              { cert: 'BSCI', icon: '🤝', market: 'EU', descEn: 'Social responsibility audit — required by European retailers', descZh: '社会责任验厂——欧洲零售连锁采购准入' },
+              { cert: 'CE', icon: '🇪🇺', market: 'EU / EEA', descEn: 'European conformity — mandatory for EU market entry', descZh: '欧洲合规——进入欧盟市场强制要求' },
+              { cert: 'GS', icon: '🇩🇪', market: 'Germany', descEn: 'German safety — most trusted mark in DACH region', descZh: '德国安全认证——德奥瑞市场最信任的安全标志' },
+              { cert: 'UL', icon: '🇺🇸', market: 'N. America', descEn: 'US safety standard — recognized by American retailers', descZh: '美国安全标准——北美零售商和保险公司认可' },
+              { cert: 'SAA', icon: '🇦🇺', market: 'Australia', descEn: 'Australian safety — required for ANZ market entry', descZh: '澳洲安全认证——澳新市场准入要求' },
+              { cert: 'PSE', icon: '🇯🇵', market: 'Japan', descEn: 'Japanese safety — mandatory for Japan market', descZh: '日本电气安全——进入日本市场强制认证' },
+            ].map((item, idx) => (
+              <div key={idx} className="glass-card rounded-2xl p-5 border border-border text-left space-y-3 hover:border-accent/30 transition-all group">
+                <div className="flex items-center justify-between">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-[9px] font-extrabold text-accent uppercase tracking-widest bg-accent/10 px-2 py-0.5 rounded font-mono">{item.market}</span>
+                </div>
+                <div>
+                  <h4 className="font-heading text-sm font-extrabold text-foreground">{item.cert}</h4>
+                  <p className="text-[11px] text-slate-450 leading-relaxed mt-1">{lang === 'en' ? item.descEn : item.descZh}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 4. THE BRAND STORY: THE TOTEM OF BUDORCAS */}
       <section id="totem" className="py-28 bg-[#0B0F17] dark:bg-background/95 border-y border-border relative overflow-hidden">
         {/* Abstract lines or decorations for premium layout */}

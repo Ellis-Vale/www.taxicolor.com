@@ -251,15 +251,28 @@ export default function V2BrandHub() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formSubmitting, setFormSubmitting] = useState(false);
 
-  const handleInquirySubmit = (e: React.FormEvent) => {
+  const handleInquirySubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formName || !formEmail || !formMessage) return;
     setFormSubmitting(true);
-    setTimeout(() => {
-      setFormSubmitting(false);
-      setFormSubmitted(true);
-      setFormName(''); setFormEmail(''); setFormCompany(''); setFormCountry(''); setFormMessage('');
-    }, 1000);
+    try {
+      const res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formName.trim(),
+          email: formEmail.trim(),
+          message: `Company: ${formCompany || '—'}\nCountry: ${formCountry || '—'}\n\n${formMessage.trim()}`,
+          page: window.location.href,
+          website: '',
+        }),
+      });
+      if (res.ok) {
+        setFormSubmitted(true);
+        setFormName(''); setFormEmail(''); setFormCompany(''); setFormCountry(''); setFormMessage('');
+      }
+    } catch {}
+    setFormSubmitting(false);
   };
 
   // Custom theme and language states

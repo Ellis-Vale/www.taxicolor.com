@@ -23,6 +23,7 @@ const TRANSLATIONS = {
     announcement: "Explore our dedicated Automotive Filtration division at filtration.taxicolor.com",
     enterpriseBadge: "Brand Hub",
     monogramTag: "TAXICOLOR GROUP",
+    navPartner: "Trusted Partner",
     navCerts: "Global Certs",
     navWorkflow: "How We Work",
     navContact: "Contact",
@@ -130,6 +131,7 @@ const TRANSLATIONS = {
     announcement: "请访问我们的专属汽车滤清器事业部：filtration.taxicolor.com",
     enterpriseBadge: "集团母站",
     monogramTag: "TAXICOLOR 集团",
+    navPartner: "制造合伙人",
     navCerts: "国际资质",
     navWorkflow: "工作方式",
     navContact: "联系我们",
@@ -325,6 +327,7 @@ export default function V2BrandHub() {
           </div>
 
           <nav className="hidden md:flex items-center gap-8 text-[10.5px] font-bold uppercase tracking-wider text-[#64748B] dark:text-slate-400">
+            <a href="#hero" className="hover:text-foreground hover:underline decoration-accent decoration-2 underline-offset-4 transition-colors">{t.navPartner}</a>
             <a href="#certifications" className="hover:text-foreground hover:underline decoration-accent decoration-2 underline-offset-4 transition-colors">{t.navCerts}</a>
             <a href="#workflow" className="hover:text-foreground hover:underline decoration-accent decoration-2 underline-offset-4 transition-colors">{t.navWorkflow}</a>
             <a href="#contact" className="hover:text-foreground hover:underline decoration-accent decoration-2 underline-offset-4 transition-colors">{t.navContact}</a>
@@ -341,7 +344,7 @@ export default function V2BrandHub() {
       </header>
 
       {/* 3. PREMIUM MINIMAL HERO SECTION */}
-      <section className="relative lg:min-h-[85vh] flex items-center py-12 lg:py-20 overflow-hidden cyber-grid">
+      <section id="hero" className="relative lg:min-h-[85vh] flex items-center py-12 lg:py-20 overflow-hidden cyber-grid">
         <div className="absolute top-10 left-1/4 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-10 right-1/4 w-[500px] h-[500px] bg-slate-900/40 rounded-full blur-3xl pointer-events-none" />
         
@@ -696,6 +699,7 @@ export default function V2BrandHub() {
           <div className="space-y-4">
             <h4 className="font-heading text-[10px] font-extrabold text-slate-800 dark:text-slate-300 uppercase tracking-widest">{t.footerCol2}</h4>
             <ul className="space-y-3 text-xs text-slate-500">
+              <li><a href="#hero" className="hover:text-accent transition-colors">{t.navPartner}</a></li>
               <li><a href="#certifications" className="hover:text-accent transition-colors">{t.navCerts}</a></li>
               <li><a href="#workflow" className="hover:text-accent transition-colors">{t.navWorkflow}</a></li>
               <li><a href="#totem" className="hover:text-accent transition-colors">{t.navStory}</a></li>

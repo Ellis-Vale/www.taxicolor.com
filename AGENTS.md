@@ -9,7 +9,7 @@ Next.js static export site for Taxicolor brand homepage. Deployed to Cloudflare 
 **Automatic: `git push` to `main` triggers GitHub Actions CI/CD.**
 
 Workflow: `.github/workflows/deploy.yml`
-- npm ci → Python Pillow compresses PNG→WebP → next build → wrangler pages deploy
+- npm ci → next build → wrangler pages deploy
 - Cloudflare project name: `taxicolor`
 - Domain: www.taxicolor.com
 
@@ -26,8 +26,10 @@ gh run list -w deploy.yml -L 1 --repo Ellis-Vale/www.taxicolor.com
 
 ## Image Handling
 
-- Place new images as PNG in `public/img/`. CI automatically converts to WebP and updates code references.
-- Write `.png` in source code; build step replaces with `.webp`.
+- Place new images in `public/img/`.
+- A `husky` pre-commit hook runs `lint-staged` with `sharp` to automatically and aggressively compress `.png` and `.jpg` images in-place before committing.
+- Do NOT bypass the pre-commit hook (e.g. avoid `--no-verify`).
+- No need to manually convert to `.webp` or change extensions in the source code; just commit the `.png`/`.jpg` and it will be compressed optimally.
 
 ## Secrets Required (GitHub Actions)
 

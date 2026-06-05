@@ -68,6 +68,8 @@
   --font-body: 'Inter', sans-serif;
 }
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 body {
   background: var(--background);
   color: var(--foreground);

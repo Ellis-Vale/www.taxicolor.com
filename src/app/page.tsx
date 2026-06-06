@@ -98,7 +98,7 @@ const TRANSLATIONS = {
     opsPara2: "",
     opsPortraitName: "Tunan",
     opsPortraitTag: "China Partner",
-    opsPortraitDesc: "China Partner",
+    opsPortraitDesc: "Supply Chain Expert",
     opsFlipHint: "Click to flip",
     opsWhatsApp: "WhatsApp Direct",
     
@@ -206,7 +206,7 @@ const TRANSLATIONS = {
     opsPara2: "",
     opsPortraitName: "图南",
     opsPortraitTag: "中国区业务合伙人",
-    opsPortraitDesc: "中国区业务合伙人",
+    opsPortraitDesc: "供应链专家",
     opsFlipHint: "点击翻转二维码",
     opsWhatsApp: "WhatsApp 即时沟通",
     

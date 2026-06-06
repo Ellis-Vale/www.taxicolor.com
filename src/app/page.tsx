@@ -94,11 +94,11 @@ const TRANSLATIONS = {
     // Ground Operations
     opsBadge: "YOUR ON-SITE AUDIT LEADER",
     opsTitle: "Seasoned Trade Experts on the Factory Floor.",
-    opsPara1: "When millions of dollars are on the line, you don't trust a novice. You trust veterans who have spent years building close partnerships with top-tier Chinese manufacturers. We know the factory owners, the production bottlenecks, and the export logistics inside out.",
-    opsPara2: "Tunan leads our on-ground operations. Combining deep supply chain resources with technical architecture, we negotiate from a position of strength, audit production lines, and guarantee every component batch ships flawlessly.",
+    opsPara1: "When your orders are on the line, you need a partner who is honest, reliable, and physically on the ground. We enforce strict quality standards on the factory floor, inspecting every batch to earn your trust.",
+    opsPara2: "We leverage deep factory partnerships and years of industry experience to secure fair pricing and consistent quality. Every batch is personally inspected before it leaves the factory floor — if it doesn't match the sample, it doesn't ship.",
     opsPortraitName: "Tunan",
     opsPortraitTag: "China Partner",
-    opsPortraitDesc: "Senior Supply Chain Expert & Tech Solutions Architect",
+    opsPortraitDesc: "Senior Supply Chain Expert & China Operations Lead",
     opsFlipHint: "Click to flip",
     opsWhatsApp: "WhatsApp Direct",
     
@@ -202,11 +202,11 @@ const TRANSLATIONS = {
     // Ground Operations
     opsBadge: "你在中国的地面行动队长",
     opsTitle: "扎根产业带的专业与诚信卫士。",
-    opsPara1: "当动辄百万美元的订单交于人手时，您需要的是一个不玩猫腻、有底线、真诚可靠的在地团队。我们深耕中国各大优质产业带，凭借多年的专业积累，知道如何为您争取到最公道的价格与不打折扣的品质。",
-    opsPara2: "图南亲自带领中国区运营。结合深厚的供应链核心资源与大厂架构师的严谨思维，我们坚守严苛的品质底线，在车间里卡死质检标准，确保每一个批次都经得起您的信任。",
+    opsPara1: "当您的订单交付于人时，您需要的是一个真诚可靠的在地团队。我们坚守严苛的品质底线，在车间里卡死质检标准，确保每一个批次都经得起您的信任。",
+    opsPara2: "我们深耕中国各大优质产业带，凭借多年的专业积累与核心工厂资源，为您争取最公道的价格与不打折扣的品质。每一批次出厂前，我们亲自在车间核验，确保货如样、样如约。",
     opsPortraitName: "图南",
     opsPortraitTag: "中国区业务合伙人",
-    opsPortraitDesc: "资深供应链专家与技术解决方案架构师",
+    opsPortraitDesc: "资深供应链专家 · 中国区运营负责人",
     opsFlipHint: "点击翻转二维码",
     opsWhatsApp: "WhatsApp 即时沟通",
     
